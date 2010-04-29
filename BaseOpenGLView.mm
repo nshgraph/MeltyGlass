@@ -25,6 +25,7 @@
 		
 	//set up display link
 	[self prepareTimer];
+	[self initializeView];
 } 
 
 
@@ -120,6 +121,10 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 }
 
 
+- (void) initializeView
+{
+}
+
 - (void) draw
 {
 	glColor3f(1.0f, 0.85f, 0.35f); glBegin(GL_TRIANGLES); { glVertex3f( 0.0, 0.6, 0.0); glVertex3f( -0.2, -0.3, 0.0); glVertex3f( 0.2, -0.3 ,0.0); } glEnd(); 
@@ -130,17 +135,33 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 {
     // Add your drawing codes here
 	
-    [[self openGLContext] makeCurrentContext];
+	NSOpenGLContext	*currentContext = [self openGLContext];
+	[currentContext makeCurrentContext];
+	
+	// remember to lock the context before we touch it since display link is threaded
+	CGLLockContext((CGLContextObj)[currentContext CGLContextObj]);
+	
 	
 	glClearColor(0, 0, 0, 0);
 	glClear(GL_COLOR_BUFFER_BIT);
+	
+	glMatrixMode( GL_PROJECTION );
 	glLoadIdentity(); 
+//	gluPerspective( 65.0, bounds.size.width / bounds.size.height, 1.0, 100 );
+	
+	glMatrixMode( GL_MODELVIEW );
+	
+	glLoadIdentity(); 
+//	glTranslatef( 0.0, 0.0, -100.0 );
 	if( mbUseTrackball && mTrackball )
 		mTrackball->tbMatrix();
 	
+	
 	[self draw];
 	
-	[[self openGLContext] flushBuffer];
+	[currentContext flushBuffer];
+	
+	CGLUnlockContext((CGLContextObj)[currentContext CGLContextObj]);
 } 
 
 

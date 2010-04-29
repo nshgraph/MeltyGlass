@@ -1,6 +1,6 @@
 //
 //  MeltyGlassAppDelegate.m
-//  BaseGL
+//  MeltyGlass
 //
 //  Created by Nathan Holmberg on 14/02/10.
 //  Copyright 2010 Apple Inc. All rights reserved.

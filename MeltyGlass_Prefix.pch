@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'BaseGL' target in the 'BaseGL' project
+// Prefix header for all source files of the 'MeltyGlass' target in the 'MeltyGlass' project
 //
 
 #ifdef __OBJC__

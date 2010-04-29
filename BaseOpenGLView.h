@@ -19,7 +19,8 @@ class CTrackball;
 	bool mbUseTrackball;
 	CTrackball* mTrackball;
 }
-// the big one - should be overwritten
+// the big ones - should be overwritten
+- (void) initializeView;
 - (void) draw;
 
 // overrides to handle fitting in NSView

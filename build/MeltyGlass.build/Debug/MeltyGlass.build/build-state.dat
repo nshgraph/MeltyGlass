@@ -1,18 +1,24 @@
 TMeltyGlass
 v7
 r0
-t294229132.248586
+t294233784.842373
 cCheck dependencies
 cProcessInfoPlistFile /Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app/Contents/Info.plist MeltyGlass-Info.plist
 cCopyStringsFile /Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
 cCompileXIB /Users/nathanholmberg/Projects/git/MeltyGlass/English.lproj/MainMenu.xib
-cProcessPCH /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-gwtsorutqglvrnbzevvyvoilfcsz/MeltyGlass_Prefix.pch.gch MeltyGlass_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cProcessPCH++ /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-gbzyprudhbwaowdlmvgcfbmanklg/MeltyGlass_Prefix.pch.gch MeltyGlass_Prefix.pch normal x86_64 objective-c++ com.apple.compilers.gcc.4_2
-cProcessPCH++ /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-bfyppsorsblifebjcldwlmtqsxox/MeltyGlass_Prefix.pch.gch MeltyGlass_Prefix.pch normal x86_64 c++ com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-cnkjsswmhkckewdvebozdgijvmhw/MeltyGlass_Prefix.pch.gch MeltyGlass_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH++ /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-akgkgvinlhlsjqhggpadmbsvqrhw/MeltyGlass_Prefix.pch.gch MeltyGlass_Prefix.pch normal x86_64 objective-c++ com.apple.compilers.gcc.4_2
+cProcessPCH++ /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-fxjljeovuaxvggayenmjftmuuxun/MeltyGlass_Prefix.pch.gch MeltyGlass_Prefix.pch normal x86_64 c++ com.apple.compilers.gcc.4_2
 cCompileC build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/main.o /Users/nathanholmberg/Projects/git/MeltyGlass/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/MeltyGlassAppDelegate.o /Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlassAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/BaseOpenGLView.o /Users/nathanholmberg/Projects/git/MeltyGlass/BaseOpenGLView.mm normal x86_64 objective-c++ com.apple.compilers.gcc.4_2
 cCompileC build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/Trackball.o /Users/nathanholmberg/Projects/git/MeltyGlass/trackball/Trackball.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+cCompileC build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/MeltyGlassOpenGLView.o /Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlassOpenGLView.mm normal x86_64 objective-c++ com.apple.compilers.gcc.4_2
+cCompileC build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/ParametricSurface.o /Users/nathanholmberg/Projects/git/MeltyGlass/objects/ParametricSurface.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/SurfaceOfRevolution.o /Users/nathanholmberg/Projects/git/MeltyGlass/objects/SurfaceOfRevolution/SurfaceOfRevolution.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/ParametricCurve.o /Users/nathanholmberg/Projects/git/MeltyGlass/objects/ParametricCurve.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/BezierCurve.o /Users/nathanholmberg/Projects/git/MeltyGlass/objects/bezier/BezierCurve.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/Path.o /Users/nathanholmberg/Projects/git/MeltyGlass/objects/Path.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 cLd /Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app/Contents/MacOS/MeltyGlass normal x86_64
 cTouch /Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app
 
@@ -203,16 +209,16 @@ i<OpenGL/OpenGL.h>
 i<GLUT/GLUT.h>
 
 N/Users/nathanholmberg/Projects/git/MeltyGlass/BaseOpenGLView.h
-c000000004B774A63000000000000039C
-t1266109027
-s924
+c000000004B7A57DE00000000000003B6
+t1266309086
+s950
 i<Cocoa/Cocoa.h>
 i<QuartzCore/QuartzCore.h>
 
 N/Users/nathanholmberg/Projects/git/MeltyGlass/BaseOpenGLView.mm
-c000000004B7748FF0000000000000EFF
-t1266108671
-s3839
+c000000004B89B0A10000000000001106
+t1267314849
+s4358
 i"BaseOpenGLView.h"
 i<OpenGL/gl.h>
 i"Trackball.h"
@@ -223,78 +229,189 @@ t1266059818
 s45
 
 N/Users/nathanholmberg/Projects/git/MeltyGlass/English.lproj/MainMenu.xib
-c000000004BD95D06000000000002C745
-t1272536326
-s182085
+c000000004BD96B77000000000002C8D1
+t1272540023
+s182481
+
+N/Users/nathanholmberg/Projects/git/MeltyGlass/GlassProfileCurve.h
+c000000004BD960340000000000000447
+t1272537140
+s1095
 
 N/Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlassAppDelegate.h
-c000000004BD95A03000000000000013C
-t1272535555
-s316
+c000000004BD960340000000000000140
+t1272537140
+s320
 i<Cocoa/Cocoa.h>
 
 N/Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlassAppDelegate.m
-c000000004BD95A030000000000000174
-t1272535555
-s372
+c000000004BD960340000000000000178
+t1272537140
+s376
 i"MeltyGlassAppDelegate.h"
 
+N/Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlassOpenGLView.h
+c000000004BD96034000000000000018C
+t1272537140
+s396
+i<Cocoa/Cocoa.h>
+i"BaseOpenGLView.h"
+
+N/Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlassOpenGLView.mm
+c000000004BD9604B0000000000000607
+t1272537163
+s1543
+i"MeltyGlassOpenGLView.h"
+i"Path.h"
+i"BezierCurve.h"
+i"SurfaceOfRevolution.h"
+i"GlassProfileCurve.h"
+
 N/Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlass_Prefix.pch
-c000000004B768A2B000000000000008F
-t1266059819
-s143
+c000000004BD963E40000000000000097
+t1272538084
+s151
 i<Cocoa/Cocoa.h>
 
 N/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app
-t1272536332
+t1272540980
 s102
 
 N/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app/Contents/Info.plist
-t1272534533
+t1272537222
 s895
 
 N/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app/Contents/MacOS/MeltyGlass
-t1272535559
-s26200
+t1272540980
+s45472
 
 N/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app/Contents/PkgInfo
-t1272534533
+t1272537222
 s8
 
 N/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app/Contents/Resources/English.lproj/InfoPlist.strings
-t1272534535
+t1272537223
 s92
 
 N/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app/Contents/Resources/English.lproj/MainMenu.nib
-t1272536332
-s35030
+t1272540194
+s35056
 
 N/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/BaseOpenGLView.o
-t1272535514
-s33900
+t1272540234
+s34760
+
+N/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/BezierCurve.o
+t1272540980
+s15372
 
 N/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/MeltyGlass.LinkFileList
-c000000004BD959990000000000000204
-t1272535449
-s516
+c000000004BD960860000000000000518
+t1272537222
+s1304
 
 N/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/MeltyGlassAppDelegate.o
-t1272535557
+t1272540234
 s21192
 
+N/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/MeltyGlassOpenGLView.o
+t1272540234
+s20528
+
+N/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/ParametricCurve.o
+t1272540235
+s7496
+
+N/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/ParametricSurface.o
+t1272540235
+s7192
+
+N/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/Path.o
+t1272540235
+s12148
+
+N/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/SurfaceOfRevolution.o
+t1272540235
+s11228
+
 N/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/Trackball.o
-t1272535511
+t1272540234
 s12688
 
 N/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/main.o
-t1272535511
+t1272540234
 s5000
 
 N/Users/nathanholmberg/Projects/git/MeltyGlass/main.m
-c000000004B768A2B00000000000000F8
-t1266059819
-s248
+c000000004BD963E400000000000000FC
+t1272538084
+s252
 i<Cocoa/Cocoa.h>
+
+N/Users/nathanholmberg/Projects/git/MeltyGlass/objects/ParametricCurve.h
+c000000004BD966110000000000000100
+t1272538641
+s256
+i<Cocoa/Cocoa.h>
+
+N/Users/nathanholmberg/Projects/git/MeltyGlass/objects/ParametricCurve.m
+c000000004BD96611000000000000015E
+t1272538641
+s350
+i"ParametricCurve.h"
+
+N/Users/nathanholmberg/Projects/git/MeltyGlass/objects/ParametricSurface.h
+c000000004B7B0E620000000000000162
+t1266355810
+s354
+i<Cocoa/Cocoa.h>
+
+N/Users/nathanholmberg/Projects/git/MeltyGlass/objects/ParametricSurface.m
+c000000004B7B0E62000000000000015B
+t1266355810
+s347
+i"ParametricSurface.h"
+
+N/Users/nathanholmberg/Projects/git/MeltyGlass/objects/Path.h
+c000000004BD966110000000000000166
+t1272538641
+s358
+i<Cocoa/Cocoa.h>
+i"ParametricCurve.h"
+
+N/Users/nathanholmberg/Projects/git/MeltyGlass/objects/Path.m
+c000000004B89F2240000000000000352
+t1267331620
+s850
+i"Path.h"
+
+N/Users/nathanholmberg/Projects/git/MeltyGlass/objects/SurfaceOfRevolution/SurfaceOfRevolution.h
+c000000004B84F9B90000000000000180
+t1267005881
+s384
+i<Cocoa/Cocoa.h>
+i"ParametricSurface.h"
+
+N/Users/nathanholmberg/Projects/git/MeltyGlass/objects/SurfaceOfRevolution/SurfaceOfRevolution.m
+c000000004B89EDC800000000000002D7
+t1267330504
+s727
+i"SurfaceOfRevolution.h"
+i"Path.h"
+
+N/Users/nathanholmberg/Projects/git/MeltyGlass/objects/bezier/BezierCurve.h
+c000000004B84F93B00000000000001C7
+t1267005755
+s455
+i<Cocoa/Cocoa.h>
+i"ParametricCurve.h"
+i"Path.h"
+
+N/Users/nathanholmberg/Projects/git/MeltyGlass/objects/bezier/BezierCurve.m
+c000000004BD96F330000000000000662
+t1272540979
+s1634
+i"BezierCurve.h"
 
 N/Users/nathanholmberg/Projects/git/MeltyGlass/trackball/Trackball.cpp
 c000000004B7729AD0000000000000DAF
@@ -322,20 +439,32 @@ N/var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/Shared
 t2
 s0
 
+N/var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-akgkgvinlhlsjqhggpadmbsvqrhw/MeltyGlass_Prefix.pch.gch
+t1272540233
+s58533520
+
 N/var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-bfyppsorsblifebjcldwlmtqsxox/MeltyGlass_Prefix.pch.gch
-t1272535502
+t1272538098
 s2523504
 
 N/var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-bifkhdbrmvectahfadzpepadecxr/MeltyGlass_Prefix.pch.gch
 t1272534596
 s58533520
 
+N/var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-cnkjsswmhkckewdvebozdgijvmhw/MeltyGlass_Prefix.pch.gch
+t1272540229
+s54208272
+
 N/var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-dhcoarccdapzbmgezxuyyudbgrtq/MeltyGlass_Prefix.pch.gch
 t1272534602
 s54208272
 
+N/var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-fxjljeovuaxvggayenmjftmuuxun/MeltyGlass_Prefix.pch.gch
+t1272540231
+s2523504
+
 N/var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-gbzyprudhbwaowdlmvgcfbmanklg/MeltyGlass_Prefix.pch.gch
-t1272535502
+t1272538099
 s58533520
 
 N/var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-grxkubctyjqbtpeqprqacxphvebn/MeltyGlass_Prefix.pch.gch
@@ -343,7 +472,7 @@ t1272534599
 s2523504
 
 N/var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-gwtsorutqglvrnbzevvyvoilfcsz/MeltyGlass_Prefix.pch.gch
-t1272535511
+t1272538091
 s54208272
 
 NBaseGL-Info.plist
@@ -358,7 +487,7 @@ s1002
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies294229131#294229131#0(0"0(0#1#0"7947009927035180032#0"0#
+lSLF07#2@18"Check dependencies294233784#294233784#0(0"0(0#1#0"4300903632#0"0#
 
 CCompileC build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/BaseOpenGLView.o /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/BaseOpenGLView.mm normal x86_64 objective-c++ com.apple.compilers.gcc.4_2
 s294227403.508282
@@ -374,8 +503,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@78"Compile /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/BaseOpenGLView.mm294227403#294227406#0(0"0(0#0#70"/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/BaseOpenGLView.mm4300903632#1704"    cd /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -include /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-bifkhdbrmvectahfadzpepadecxr/MeltyGlass_Prefix.pch -c /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/BaseOpenGLView.mm -o /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/BaseOpenGLView.o0#
 
 CCompileC build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/BaseOpenGLView.o /Users/nathanholmberg/Projects/git/MeltyGlass/BaseOpenGLView.mm normal x86_64 objective-c++ com.apple.compilers.gcc.4_2
-s294228311.626327
-e294228314.825284
+s294233034.088855
+e294233034.985924
 r1
 xCompileC
 xbuild/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/BaseOpenGLView.o
@@ -384,7 +513,20 @@ xnormal
 xx86_64
 xobjective-c++
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@71"Compile /Users/nathanholmberg/Projects/git/MeltyGlass/BaseOpenGLView.mm294228311#294228314#0(0"0(0#0#63"/Users/nathanholmberg/Projects/git/MeltyGlass/BaseOpenGLView.mm4300903632#1627"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -include /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-gbzyprudhbwaowdlmvgcfbmanklg/MeltyGlass_Prefix.pch -c /Users/nathanholmberg/Projects/git/MeltyGlass/BaseOpenGLView.mm -o /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/BaseOpenGLView.o0#
+lSLF07#2@71"Compile /Users/nathanholmberg/Projects/git/MeltyGlass/BaseOpenGLView.mm294233034#294233034#0(0"0(0#0#63"/Users/nathanholmberg/Projects/git/MeltyGlass/BaseOpenGLView.mm4300903632#1627"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -include /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-akgkgvinlhlsjqhggpadmbsvqrhw/MeltyGlass_Prefix.pch -c /Users/nathanholmberg/Projects/git/MeltyGlass/BaseOpenGLView.mm -o /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/BaseOpenGLView.o0#
+
+CCompileC build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/BezierCurve.o /Users/nathanholmberg/Projects/git/MeltyGlass/objects/bezier/BezierCurve.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s294233779.542870
+e294233780.084782
+r1
+xCompileC
+xbuild/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/BezierCurve.o
+x/Users/nathanholmberg/Projects/git/MeltyGlass/objects/bezier/BezierCurve.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/nathanholmberg/Projects/git/MeltyGlass/objects/bezier/BezierCurve.m294233779#294233780#0(0"0(0#0#74"/Users/nathanholmberg/Projects/git/MeltyGlass/objects/bezier/BezierCurve.m4300903632#1616"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -include /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-cnkjsswmhkckewdvebozdgijvmhw/MeltyGlass_Prefix.pch -c /Users/nathanholmberg/Projects/git/MeltyGlass/objects/bezier/BezierCurve.m -o /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/BezierCurve.o0#
 
 CCompileC build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/MeltyGlassAppDelegate.o /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/MeltyGlassAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s294227402.865841
@@ -403,8 +545,8 @@ o/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/MeltyGlassAppDelegate.m:13
 lSLF07#2@84"Compile /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/MeltyGlassAppDelegate.m294227402#294227403#0(432"/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/MeltyGlassAppDelegate.m:9:30: error: BaseGLAppDelegate.h: No such file or directory/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/MeltyGlassAppDelegate.m:13: warning: cannot find interface declaration for 'BaseGLAppDelegate'/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/MeltyGlassAppDelegate.m:13: error: no declaration of property 'window' found in the interface3(4@46"BaseGLAppDelegate.h: No such file or directory294227403#0#137#0(6@76"/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/MeltyGlassAppDelegate.m287752619#9#0#9#0#28"*: No such file or directory0(22@57"Cannot find interface declaration for 'BaseGLAppDelegate'294227403#137#148#0(6@76"/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/MeltyGlassAppDelegate.m287752619#13#0#13#0#0"0(4@58"No declaration of property 'window' found in the interface294227403#285#147#0(6@76"/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/MeltyGlassAppDelegate.m287752619#13#0#13#0#0"0(0#0#76"/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/MeltyGlassAppDelegate.m4300903632#1698"    cd /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -include /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-dhcoarccdapzbmgezxuyyudbgrtq/MeltyGlass_Prefix.pch -c /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/MeltyGlassAppDelegate.m -o /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/MeltyGlassAppDelegate.o1#
 
 CCompileC build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/MeltyGlassAppDelegate.o /Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlassAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s294228355.490601
-e294228357.741991
+s294233033.305300
+e294233034.088723
 r1
 xCompileC
 xbuild/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/MeltyGlassAppDelegate.o
@@ -413,7 +555,72 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@77"Compile /Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlassAppDelegate.m294228355#294228357#0(0"0(0#0#69"/Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlassAppDelegate.m4300903632#1621"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -include /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-gwtsorutqglvrnbzevvyvoilfcsz/MeltyGlass_Prefix.pch -c /Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlassAppDelegate.m -o /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/MeltyGlassAppDelegate.o0#
+lSLF07#2@77"Compile /Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlassAppDelegate.m294233033#294233034#0(0"0(0#0#69"/Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlassAppDelegate.m4300903632#1621"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -include /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-cnkjsswmhkckewdvebozdgijvmhw/MeltyGlass_Prefix.pch -c /Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlassAppDelegate.m -o /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/MeltyGlassAppDelegate.o0#
+
+CCompileC build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/MeltyGlassOpenGLView.o /Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlassOpenGLView.mm normal x86_64 objective-c++ com.apple.compilers.gcc.4_2
+s294233034.514271
+e294233034.875478
+r1
+xCompileC
+xbuild/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/MeltyGlassOpenGLView.o
+x/Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlassOpenGLView.mm
+xnormal
+xx86_64
+xobjective-c++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlassOpenGLView.mm294233034#294233034#0(0"0(0#0#69"/Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlassOpenGLView.mm4300903632#1639"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -include /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-akgkgvinlhlsjqhggpadmbsvqrhw/MeltyGlass_Prefix.pch -c /Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlassOpenGLView.mm -o /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/MeltyGlassOpenGLView.o0#
+
+CCompileC build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/ParametricCurve.o /Users/nathanholmberg/Projects/git/MeltyGlass/objects/ParametricCurve.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s294233035.113909
+e294233035.423429
+r1
+xCompileC
+xbuild/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/ParametricCurve.o
+x/Users/nathanholmberg/Projects/git/MeltyGlass/objects/ParametricCurve.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/nathanholmberg/Projects/git/MeltyGlass/objects/ParametricCurve.m294233035#294233035#0(0"0(0#0#71"/Users/nathanholmberg/Projects/git/MeltyGlass/objects/ParametricCurve.m4300903632#1617"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -include /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-cnkjsswmhkckewdvebozdgijvmhw/MeltyGlass_Prefix.pch -c /Users/nathanholmberg/Projects/git/MeltyGlass/objects/ParametricCurve.m -o /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/ParametricCurve.o0#
+
+CCompileC build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/ParametricSurface.o /Users/nathanholmberg/Projects/git/MeltyGlass/objects/ParametricSurface.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s294233034.875639
+e294233035.113782
+r1
+xCompileC
+xbuild/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/ParametricSurface.o
+x/Users/nathanholmberg/Projects/git/MeltyGlass/objects/ParametricSurface.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@81"Compile /Users/nathanholmberg/Projects/git/MeltyGlass/objects/ParametricSurface.m294233034#294233035#0(0"0(0#0#73"/Users/nathanholmberg/Projects/git/MeltyGlass/objects/ParametricSurface.m4300903632#1621"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -include /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-cnkjsswmhkckewdvebozdgijvmhw/MeltyGlass_Prefix.pch -c /Users/nathanholmberg/Projects/git/MeltyGlass/objects/ParametricSurface.m -o /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/ParametricSurface.o0#
+
+CCompileC build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/Path.o /Users/nathanholmberg/Projects/git/MeltyGlass/objects/Path.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s294233035.423562
+e294233035.603618
+r1
+xCompileC
+xbuild/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/Path.o
+x/Users/nathanholmberg/Projects/git/MeltyGlass/objects/Path.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/nathanholmberg/Projects/git/MeltyGlass/objects/Path.m294233035#294233035#0(0"0(0#0#60"/Users/nathanholmberg/Projects/git/MeltyGlass/objects/Path.m4300903632#1595"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -include /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-cnkjsswmhkckewdvebozdgijvmhw/MeltyGlass_Prefix.pch -c /Users/nathanholmberg/Projects/git/MeltyGlass/objects/Path.m -o /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/Path.o0#
+
+CCompileC build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/SurfaceOfRevolution.o /Users/nathanholmberg/Projects/git/MeltyGlass/objects/SurfaceOfRevolution/SurfaceOfRevolution.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s294233034.986080
+e294233035.261811
+r1
+xCompileC
+xbuild/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/SurfaceOfRevolution.o
+x/Users/nathanholmberg/Projects/git/MeltyGlass/objects/SurfaceOfRevolution/SurfaceOfRevolution.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@103"Compile /Users/nathanholmberg/Projects/git/MeltyGlass/objects/SurfaceOfRevolution/SurfaceOfRevolution.m294233034#294233035#0(0"0(0#0#95"/Users/nathanholmberg/Projects/git/MeltyGlass/objects/SurfaceOfRevolution/SurfaceOfRevolution.m4300903632#1645"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -include /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-cnkjsswmhkckewdvebozdgijvmhw/MeltyGlass_Prefix.pch -c /Users/nathanholmberg/Projects/git/MeltyGlass/objects/SurfaceOfRevolution/SurfaceOfRevolution.m -o /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/SurfaceOfRevolution.o0#
 
 CCompileC build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/Trackball.o /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/trackball/Trackball.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
 s294227404.230252
@@ -429,8 +636,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@84"Compile /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/trackball/Trackball.cpp294227404#294227404#0(0"0(0#0#76"/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/trackball/Trackball.cpp4300903632#1695"    cd /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -include /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-grxkubctyjqbtpeqprqacxphvebn/MeltyGlass_Prefix.pch -c /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/trackball/Trackball.cpp -o /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/Trackball.o0#
 
 CCompileC build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/Trackball.o /Users/nathanholmberg/Projects/git/MeltyGlass/trackball/Trackball.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
-s294228311.663791
-e294228311.830260
+s294233034.090381
+e294233034.514151
 r1
 xCompileC
 xbuild/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/Trackball.o
@@ -439,7 +646,7 @@ xnormal
 xx86_64
 xc++
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@77"Compile /Users/nathanholmberg/Projects/git/MeltyGlass/trackball/Trackball.cpp294228311#294228311#0(0"0(0#0#69"/Users/nathanholmberg/Projects/git/MeltyGlass/trackball/Trackball.cpp4300903632#1618"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -include /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-bfyppsorsblifebjcldwlmtqsxox/MeltyGlass_Prefix.pch -c /Users/nathanholmberg/Projects/git/MeltyGlass/trackball/Trackball.cpp -o /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/Trackball.o0#
+lSLF07#2@77"Compile /Users/nathanholmberg/Projects/git/MeltyGlass/trackball/Trackball.cpp294233034#294233034#0(0"0(0#0#69"/Users/nathanholmberg/Projects/git/MeltyGlass/trackball/Trackball.cpp4300903632#1618"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -include /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-fxjljeovuaxvggayenmjftmuuxun/MeltyGlass_Prefix.pch -c /Users/nathanholmberg/Projects/git/MeltyGlass/trackball/Trackball.cpp -o /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/Trackball.o0#
 
 CCompileC build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/main.o /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s294227402.864610
@@ -455,8 +662,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@67"Compile /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/main.m294227402#294227404#0(0"0(0#0#59"/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/main.m4300903632#1664"    cd /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -include /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-dhcoarccdapzbmgezxuyyudbgrtq/MeltyGlass_Prefix.pch -c /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/main.m -o /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/main.o0#
 
 CCompileC build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/main.o /Users/nathanholmberg/Projects/git/MeltyGlass/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s294228311.344111
-e294228311.663655
+s294233033.303583
+e294233034.090268
 r1
 xCompileC
 xbuild/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/main.o
@@ -465,7 +672,7 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@60"Compile /Users/nathanholmberg/Projects/git/MeltyGlass/main.m294228311#294228311#0(0"0(0#0#52"/Users/nathanholmberg/Projects/git/MeltyGlass/main.m4300903632#1587"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -include /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-gwtsorutqglvrnbzevvyvoilfcsz/MeltyGlass_Prefix.pch -c /Users/nathanholmberg/Projects/git/MeltyGlass/main.m -o /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/main.o0#
+lSLF07#2@60"Compile /Users/nathanholmberg/Projects/git/MeltyGlass/main.m294233033#294233034#0(0"0(0#0#52"/Users/nathanholmberg/Projects/git/MeltyGlass/main.m4300903632#1587"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -include /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-cnkjsswmhkckewdvebozdgijvmhw/MeltyGlass_Prefix.pch -c /Users/nathanholmberg/Projects/git/MeltyGlass/main.m -o /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/main.o0#
 
 CCompileXIB /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/English.lproj/MainMenu.xib
 s294227333.334792
@@ -480,16 +687,16 @@ o/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/English.lproj/MainMenu.xib
 lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib294227333#294227338#0(532"2010-04-29 21:48:56.847 ibtool[30714:607] *** WARNING: Method attributes in class NSOpenGLPixelFormat is obsolete and will be removed in a future release. ***2010-04-29 21:48:56.883 ibtool[30714:607] *** WARNING: Method setAttributes: in class NSOpenGLPixelFormat is obsolete and will be removed in a future release. ***/* com.apple.ibtool.document.warnings *//Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/English.lproj/MainMenu.xib:533: warning: NSOpenGLViews are not supported in windows with "One Shot" memory enabled.1(22@74"NSOpenGLViews are not supported in windows with "One Shot" memory enabled.294227338#18446744073709551615#0#0(6@79"/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/English.lproj/MainMenu.xib287753664#533#0#533#0#0"0(0#0#79"/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/English.lproj/MainMenu.xib4300903632#372"    cd /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/Debug/MeltyGlass.app/Contents/Resources/English.lproj/MainMenu.nib /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/English.lproj/MainMenu.xib0#
 
 CCompileXIB /Users/nathanholmberg/Projects/git/MeltyGlass/English.lproj/MainMenu.xib
-s294229131.345714
-e294229132.171624
+s294232993.553071
+e294232995.069981
 r1
 xCompileXIB
 x/Users/nathanholmberg/Projects/git/MeltyGlass/English.lproj/MainMenu.xib
-o2010-04-29 22:18:51.973 ibtool[251:607] *** WARNING: Method attributes in class NSOpenGLPixelFormat is obsolete and will be removed in a future release. ***
-o2010-04-29 22:18:51.977 ibtool[251:607] *** WARNING: Method setAttributes: in class NSOpenGLPixelFormat is obsolete and will be removed in a future release. ***
+o2010-04-29 23:23:14.919 ibtool[285:607] *** WARNING: Method attributes in class NSOpenGLPixelFormat is obsolete and will be removed in a future release. ***
+o2010-04-29 23:23:14.922 ibtool[285:607] *** WARNING: Method setAttributes: in class NSOpenGLPixelFormat is obsolete and will be removed in a future release. ***
 o/* com.apple.ibtool.document.warnings */
 o/Users/nathanholmberg/Projects/git/MeltyGlass/English.lproj/MainMenu.xib:533: warning: NSOpenGLViews are not supported in windows with "One Shot" memory enabled.
-lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib294229131#294229132#0(521"2010-04-29 22:18:51.973 ibtool[251:607] *** WARNING: Method attributes in class NSOpenGLPixelFormat is obsolete and will be removed in a future release. ***2010-04-29 22:18:51.977 ibtool[251:607] *** WARNING: Method setAttributes: in class NSOpenGLPixelFormat is obsolete and will be removed in a future release. ***/* com.apple.ibtool.document.warnings *//Users/nathanholmberg/Projects/git/MeltyGlass/English.lproj/MainMenu.xib:533: warning: NSOpenGLViews are not supported in windows with "One Shot" memory enabled.1(22@74"NSOpenGLViews are not supported in windows with "One Shot" memory enabled.294229132#18446744073709551615#0#0(6@72"/Users/nathanholmberg/Projects/git/MeltyGlass/English.lproj/MainMenu.xib294229126#533#0#533#0#0"0(0#0#72"/Users/nathanholmberg/Projects/git/MeltyGlass/English.lproj/MainMenu.xib30399774232936560#351"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app/Contents/Resources/English.lproj/MainMenu.nib /Users/nathanholmberg/Projects/git/MeltyGlass/English.lproj/MainMenu.xib0#
+lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib294232994#294232995#0(521"2010-04-29 23:23:14.919 ibtool[285:607] *** WARNING: Method attributes in class NSOpenGLPixelFormat is obsolete and will be removed in a future release. ***2010-04-29 23:23:14.922 ibtool[285:607] *** WARNING: Method setAttributes: in class NSOpenGLPixelFormat is obsolete and will be removed in a future release. ***/* com.apple.ibtool.document.warnings *//Users/nathanholmberg/Projects/git/MeltyGlass/English.lproj/MainMenu.xib:533: warning: NSOpenGLViews are not supported in windows with "One Shot" memory enabled.1(22@74"NSOpenGLViews are not supported in windows with "One Shot" memory enabled.294232995#18446744073709551615#0#0(6@72"/Users/nathanholmberg/Projects/git/MeltyGlass/English.lproj/MainMenu.xib294232823#533#0#533#0#0"0(0#0#72"/Users/nathanholmberg/Projects/git/MeltyGlass/English.lproj/MainMenu.xib30399774232936560#351"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app/Contents/Resources/English.lproj/MainMenu.nib /Users/nathanholmberg/Projects/git/MeltyGlass/English.lproj/MainMenu.xib0#
 
 CCopyStringsFile /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/Debug/BaseGL.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
 r0
@@ -504,7 +711,13 @@ xEnglish.lproj/InfoPlist.strings
 lSLF07#2@36"Copy English.lproj/InfoPlist.strings294227333#294227336#0(0"0(0#0#84"/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/English.lproj/InfoPlist.strings4300903632#396"    cd /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/Debug/MeltyGlass.app/Contents/Resources/English.lproj0#
 
 CCopyStringsFile /Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-r0
+s294230022.685369
+e294230023.014588
+r1
+xCopyStringsFile
+x/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app/Contents/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF07#2@36"Copy English.lproj/InfoPlist.strings294230022#294230023#0(0"0(0#0#77"/Users/nathanholmberg/Projects/git/MeltyGlass/English.lproj/InfoPlist.strings4300903632#382"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app/Contents/Resources/English.lproj0#
 
 CLd /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/Debug/BaseGL.app/Contents/MacOS/BaseGL normal x86_64
 r0
@@ -513,14 +726,14 @@ CLd /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/Debug/MeltyGlass.
 r0
 
 CLd /Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app/Contents/MacOS/MeltyGlass normal x86_64
-s294228357.742210
-e294228359.358073
+s294233780.084897
+e294233780.197641
 r1
 xLd
 x/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app/Contents/MacOS/MeltyGlass
 xnormal
 xx86_64
-lSLF07#2@103"Link /Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app/Contents/MacOS/MeltyGlass294228357#294228359#0(0"0(0#0#0"4300903632#632"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -filelist /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/MeltyGlass.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -framework OpenGL -framework QuartzCore -o /Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app/Contents/MacOS/MeltyGlass0#
+lSLF07#2@103"Link /Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app/Contents/MacOS/MeltyGlass294233780#294233780#0(0"0(0#0#0"4300903632#632"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -filelist /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/Objects-normal/x86_64/MeltyGlass.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -framework OpenGL -framework QuartzCore -o /Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app/Contents/MacOS/MeltyGlass0#
 
 CProcessInfoPlistFile /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/Debug/BaseGL.app/Contents/Info.plist BaseGL-Info.plist
 r0
@@ -538,10 +751,29 @@ xMeltyGlass-Info.plist
 lSLF07#2@29"Process MeltyGlass-Info.plist294227333#294227333#0(0"0(0#0#74"/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/MeltyGlass-Info.plist4300903632#361"    cd /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass    builtin-infoPlistUtility MeltyGlass-Info.plist -genpkginfo /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/Debug/MeltyGlass.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/Debug/MeltyGlass.app/Contents/Info.plist0#
 
 CProcessInfoPlistFile /Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app/Contents/Info.plist MeltyGlass-Info.plist
-r0
+s294230022.642154
+e294230022.685262
+r1
+xProcessInfoPlistFile
+x/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app/Contents/Info.plist
+xMeltyGlass-Info.plist
+lSLF07#2@29"Process MeltyGlass-Info.plist294230022#294230022#0(0"0(0#0#67"/Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlass-Info.plist4300903632#340"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    builtin-infoPlistUtility MeltyGlass-Info.plist -genpkginfo /Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app/Contents/Info.plist0#
 
 CProcessPCH /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BaseGL_Prefix-aztdbtzhpklkdgfyjvufjjjdzhcp/BaseGL_Prefix.pch.gch BaseGL_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
 r0
+
+CProcessPCH /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-cnkjsswmhkckewdvebozdgijvmhw/MeltyGlass_Prefix.pch.gch MeltyGlass_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s294232995.070289
+e294233030.191443
+r1
+xProcessPCH
+x/var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-cnkjsswmhkckewdvebozdgijvmhw/MeltyGlass_Prefix.pch.gch
+xMeltyGlass_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@32"Precompile MeltyGlass_Prefix.pch294232995#294233030#0(0"0(0#0#67"/Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlass_Prefix.pch4300903632#1483"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -c /Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlass_Prefix.pch -o /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-cnkjsswmhkckewdvebozdgijvmhw/MeltyGlass_Prefix.pch.gch0#
 
 CProcessPCH /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-dhcoarccdapzbmgezxuyyudbgrtq/MeltyGlass_Prefix.pch.gch MeltyGlass_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s294227338.145343
@@ -557,8 +789,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@32"Precompile MeltyGlass_Prefix.pch294227338#294227402#0(0"0(0#0#74"/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/MeltyGlass_Prefix.pch4300903632#1553"    cd /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -c /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/MeltyGlass_Prefix.pch -o /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-dhcoarccdapzbmgezxuyyudbgrtq/MeltyGlass_Prefix.pch.gch0#
 
 CProcessPCH /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-gwtsorutqglvrnbzevvyvoilfcsz/MeltyGlass_Prefix.pch.gch MeltyGlass_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s294228249.269660
-e294228311.343818
+s294230884.861377
+e294230897.861766
 r1
 xProcessPCH
 x/var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-gwtsorutqglvrnbzevvyvoilfcsz/MeltyGlass_Prefix.pch.gch
@@ -567,7 +799,7 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@32"Precompile MeltyGlass_Prefix.pch294228249#294228311#0(0"0(0#0#67"/Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlass_Prefix.pch4300903632#1483"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -c /Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlass_Prefix.pch -o /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-gwtsorutqglvrnbzevvyvoilfcsz/MeltyGlass_Prefix.pch.gch0#
+lSLF07#2@32"Precompile MeltyGlass_Prefix.pch294230884#294230897#0(0"0(0#0#67"/Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlass_Prefix.pch4300903632#1483"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -c /Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlass_Prefix.pch -o /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-gwtsorutqglvrnbzevvyvoilfcsz/MeltyGlass_Prefix.pch.gch0#
 
 CProcessPCH++ /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BaseGL_Prefix-aciyskcxnhaybkgdrdqkcxetrgpp/BaseGL_Prefix.pch.gch BaseGL_Prefix.pch normal x86_64 c++ com.apple.compilers.gcc.4_2
 r0
@@ -575,9 +807,22 @@ r0
 CProcessPCH++ /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BaseGL_Prefix-dsiudgykswztfebqlyhyksvkpvdu/BaseGL_Prefix.pch.gch BaseGL_Prefix.pch normal x86_64 objective-c++ com.apple.compilers.gcc.4_2
 r0
 
+CProcessPCH++ /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-akgkgvinlhlsjqhggpadmbsvqrhw/MeltyGlass_Prefix.pch.gch MeltyGlass_Prefix.pch normal x86_64 objective-c++ com.apple.compilers.gcc.4_2
+s294232995.071463
+e294233033.303430
+r1
+xProcessPCH++
+x/var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-akgkgvinlhlsjqhggpadmbsvqrhw/MeltyGlass_Prefix.pch.gch
+xMeltyGlass_Prefix.pch
+xnormal
+xx86_64
+xobjective-c++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@32"Precompile MeltyGlass_Prefix.pch294232995#294233033#0(0"0(0#0#67"/Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlass_Prefix.pch4300903632#1502"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c++-header -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -c /Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlass_Prefix.pch -o /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-akgkgvinlhlsjqhggpadmbsvqrhw/MeltyGlass_Prefix.pch.gch0#
+
 CProcessPCH++ /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-bfyppsorsblifebjcldwlmtqsxox/MeltyGlass_Prefix.pch.gch MeltyGlass_Prefix.pch normal x86_64 c++ com.apple.compilers.gcc.4_2
-s294228302.706746
-e294228304.504861
+s294230897.861961
+e294230898.547811
 r1
 xProcessPCH++
 x/var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-bfyppsorsblifebjcldwlmtqsxox/MeltyGlass_Prefix.pch.gch
@@ -586,7 +831,7 @@ xnormal
 xx86_64
 xc++
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@32"Precompile MeltyGlass_Prefix.pch294228302#294228304#0(0"0(0#0#67"/Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlass_Prefix.pch4300903632#1492"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++-header -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -c /Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlass_Prefix.pch -o /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-bfyppsorsblifebjcldwlmtqsxox/MeltyGlass_Prefix.pch.gch0#
+lSLF07#2@32"Precompile MeltyGlass_Prefix.pch294230897#294230898#0(0"0(0#0#67"/Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlass_Prefix.pch4300903632#1492"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++-header -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -c /Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlass_Prefix.pch -o /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-bfyppsorsblifebjcldwlmtqsxox/MeltyGlass_Prefix.pch.gch0#
 
 CProcessPCH++ /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-bifkhdbrmvectahfadzpepadecxr/MeltyGlass_Prefix.pch.gch MeltyGlass_Prefix.pch normal x86_64 objective-c++ com.apple.compilers.gcc.4_2
 s294227338.146586
@@ -601,9 +846,22 @@ xobjective-c++
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@32"Precompile MeltyGlass_Prefix.pch294227338#294227398#0(0"0(0#0#74"/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/MeltyGlass_Prefix.pch4300903632#1572"    cd /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c++-header -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -c /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/MeltyGlass_Prefix.pch -o /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-bifkhdbrmvectahfadzpepadecxr/MeltyGlass_Prefix.pch.gch0#
 
+CProcessPCH++ /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-fxjljeovuaxvggayenmjftmuuxun/MeltyGlass_Prefix.pch.gch MeltyGlass_Prefix.pch normal x86_64 c++ com.apple.compilers.gcc.4_2
+s294233030.191685
+e294233031.609306
+r1
+xProcessPCH++
+x/var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-fxjljeovuaxvggayenmjftmuuxun/MeltyGlass_Prefix.pch.gch
+xMeltyGlass_Prefix.pch
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@32"Precompile MeltyGlass_Prefix.pch294233030#294233031#0(0"0(0#0#67"/Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlass_Prefix.pch4300903632#1492"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++-header -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -c /Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlass_Prefix.pch -o /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-fxjljeovuaxvggayenmjftmuuxun/MeltyGlass_Prefix.pch.gch0#
+
 CProcessPCH++ /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-gbzyprudhbwaowdlmvgcfbmanklg/MeltyGlass_Prefix.pch.gch MeltyGlass_Prefix.pch normal x86_64 objective-c++ com.apple.compilers.gcc.4_2
-s294228249.270721
-e294228302.706281
+s294230884.862624
+e294230899.787262
 r1
 xProcessPCH++
 x/var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-gbzyprudhbwaowdlmvgcfbmanklg/MeltyGlass_Prefix.pch.gch
@@ -612,7 +870,7 @@ xnormal
 xx86_64
 xobjective-c++
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@32"Precompile MeltyGlass_Prefix.pch294228249#294228302#0(0"0(0#0#67"/Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlass_Prefix.pch4300903632#1502"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c++-header -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -c /Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlass_Prefix.pch -o /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-gbzyprudhbwaowdlmvgcfbmanklg/MeltyGlass_Prefix.pch.gch0#
+lSLF07#2@32"Precompile MeltyGlass_Prefix.pch294230884#294230899#0(0"0(0#0#67"/Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlass_Prefix.pch4300903632#1502"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c++-header -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-generated-files.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-own-target-headers.hmap -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-all-target-headers.hmap -iquote /Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/MeltyGlass-project-headers.hmap -F/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/include -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources/x86_64 -I/Users/nathanholmberg/Projects/git/MeltyGlass/build/MeltyGlass.build/Debug/MeltyGlass.build/DerivedSources -c /Users/nathanholmberg/Projects/git/MeltyGlass/MeltyGlass_Prefix.pch -o /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-gbzyprudhbwaowdlmvgcfbmanklg/MeltyGlass_Prefix.pch.gch0#
 
 CProcessPCH++ /var/folders/Lr/LrqM8vNbGdO62YIJlyLMR++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MeltyGlass_Prefix-grxkubctyjqbtpeqprqacxphvebn/MeltyGlass_Prefix.pch.gch MeltyGlass_Prefix.pch normal x86_64 c++ com.apple.compilers.gcc.4_2
 s294227398.534350
@@ -634,10 +892,10 @@ CTouch /Users/nathanholmberg/Projects/MeltyGlass/MeltyGlass/build/Debug/MeltyGla
 r0
 
 CTouch /Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app
-s294229132.172480
-e294229132.248372
+s294233780.197751
+e294233780.200819
 r1
 xTouch
 x/Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app
-lSLF07#2@78"Touch /Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app294229132#294229132#0(0"0(0#0#0"4300903632#148"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    /usr/bin/touch -c /Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app0#
+lSLF07#2@78"Touch /Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app294233780#294233780#0(0"0(0#0#0"4300903632#148"    cd /Users/nathanholmberg/Projects/git/MeltyGlass    /usr/bin/touch -c /Users/nathanholmberg/Projects/git/MeltyGlass/build/Debug/MeltyGlass.app0#
 

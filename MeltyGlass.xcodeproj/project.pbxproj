@@ -16,6 +16,12 @@
 		F87011191126C34B0000F302 /* BaseOpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = F87011181126C34B0000F302 /* BaseOpenGLView.mm */; };
 		F8701139112757130000F302 /* Trackball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8701137112757130000F302 /* Trackball.cpp */; };
 		F87011B311277CD40000F302 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87011B211277CD40000F302 /* QuartzCore.framework */; };
+		F8A96C95118996B1009C77AA /* MeltyGlassOpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = F8A96C94118996B1009C77AA /* MeltyGlassOpenGLView.mm */; };
+		F8A96CAF118996F6009C77AA /* ParametricSurface.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A96CAE118996F6009C77AA /* ParametricSurface.m */; };
+		F8A96CB2118996FE009C77AA /* SurfaceOfRevolution.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A96CB1118996FE009C77AA /* SurfaceOfRevolution.m */; };
+		F8A96CB511899707009C77AA /* ParametricCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A96CB411899707009C77AA /* ParametricCurve.m */; };
+		F8A96CB81189970F009C77AA /* BezierCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A96CB71189970F009C77AA /* BezierCurve.m */; };
+		F8A96CBB1189971C009C77AA /* Path.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A96CBA1189971C009C77AA /* Path.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +43,19 @@
 		F8701137112757130000F302 /* Trackball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Trackball.cpp; path = trackball/Trackball.cpp; sourceTree = "<group>"; };
 		F8701138112757130000F302 /* Trackball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Trackball.h; path = trackball/Trackball.h; sourceTree = "<group>"; };
 		F87011B211277CD40000F302 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F8A96C93118996B1009C77AA /* MeltyGlassOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeltyGlassOpenGLView.h; sourceTree = "<group>"; };
+		F8A96C94118996B1009C77AA /* MeltyGlassOpenGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MeltyGlassOpenGLView.mm; sourceTree = "<group>"; };
+		F8A96CAD118996F6009C77AA /* ParametricSurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParametricSurface.h; path = objects/ParametricSurface.h; sourceTree = "<group>"; };
+		F8A96CAE118996F6009C77AA /* ParametricSurface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParametricSurface.m; path = objects/ParametricSurface.m; sourceTree = "<group>"; };
+		F8A96CB0118996FE009C77AA /* SurfaceOfRevolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SurfaceOfRevolution.h; path = objects/SurfaceOfRevolution/SurfaceOfRevolution.h; sourceTree = "<group>"; };
+		F8A96CB1118996FE009C77AA /* SurfaceOfRevolution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SurfaceOfRevolution.m; path = objects/SurfaceOfRevolution/SurfaceOfRevolution.m; sourceTree = "<group>"; };
+		F8A96CB311899707009C77AA /* ParametricCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParametricCurve.h; path = objects/ParametricCurve.h; sourceTree = "<group>"; };
+		F8A96CB411899707009C77AA /* ParametricCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParametricCurve.m; path = objects/ParametricCurve.m; sourceTree = "<group>"; };
+		F8A96CB61189970F009C77AA /* BezierCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BezierCurve.h; path = objects/bezier/BezierCurve.h; sourceTree = "<group>"; };
+		F8A96CB71189970F009C77AA /* BezierCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BezierCurve.m; path = objects/bezier/BezierCurve.m; sourceTree = "<group>"; };
+		F8A96CB91189971C009C77AA /* Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Path.h; path = objects/Path.h; sourceTree = "<group>"; };
+		F8A96CBA1189971C009C77AA /* Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Path.m; path = objects/Path.m; sourceTree = "<group>"; };
+		F8A96CBC1189974E009C77AA /* GlassProfileCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlassProfileCurve.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +75,14 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F8A96C9D118996B7009C77AA /* Objects */,
 				F8701135112757070000F302 /* Trackball */,
 				F87011171126C34B0000F302 /* BaseOpenGLView.h */,
 				F87011181126C34B0000F302 /* BaseOpenGLView.mm */,
 				256AC3D80F4B6AC300CF3369 /* MeltyGlassAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* MeltyGlassAppDelegate.m */,
+				F8A96C93118996B1009C77AA /* MeltyGlassOpenGLView.h */,
+				F8A96C94118996B1009C77AA /* MeltyGlassOpenGLView.mm */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -96,6 +118,7 @@
 		29B97314FDCFA39411CA2CEA /* BaseGL */ = {
 			isa = PBXGroup;
 			children = (
+				F8A96CBD11899754009C77AA /* Info */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -140,6 +163,63 @@
 				F8701138112757130000F302 /* Trackball.h */,
 			);
 			name = Trackball;
+			sourceTree = "<group>";
+		};
+		F8A96C9D118996B7009C77AA /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				F8A96CAA118996DC009C77AA /* Surfaces */,
+				F8A96CA9118996D6009C77AA /* Curves */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		F8A96C9E118996BD009C77AA /* Bezier */ = {
+			isa = PBXGroup;
+			children = (
+				F8A96CB61189970F009C77AA /* BezierCurve.h */,
+				F8A96CB71189970F009C77AA /* BezierCurve.m */,
+			);
+			name = Bezier;
+			sourceTree = "<group>";
+		};
+		F8A96CA9118996D6009C77AA /* Curves */ = {
+			isa = PBXGroup;
+			children = (
+				F8A96CB91189971C009C77AA /* Path.h */,
+				F8A96CBA1189971C009C77AA /* Path.m */,
+				F8A96CB311899707009C77AA /* ParametricCurve.h */,
+				F8A96CB411899707009C77AA /* ParametricCurve.m */,
+				F8A96C9E118996BD009C77AA /* Bezier */,
+			);
+			name = Curves;
+			sourceTree = "<group>";
+		};
+		F8A96CAA118996DC009C77AA /* Surfaces */ = {
+			isa = PBXGroup;
+			children = (
+				F8A96CAD118996F6009C77AA /* ParametricSurface.h */,
+				F8A96CAE118996F6009C77AA /* ParametricSurface.m */,
+				F8A96CAB118996E7009C77AA /* SurfaceOfRevolution */,
+			);
+			name = Surfaces;
+			sourceTree = "<group>";
+		};
+		F8A96CAB118996E7009C77AA /* SurfaceOfRevolution */ = {
+			isa = PBXGroup;
+			children = (
+				F8A96CB0118996FE009C77AA /* SurfaceOfRevolution.h */,
+				F8A96CB1118996FE009C77AA /* SurfaceOfRevolution.m */,
+			);
+			name = SurfaceOfRevolution;
+			sourceTree = "<group>";
+		};
+		F8A96CBD11899754009C77AA /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				F8A96CBC1189974E009C77AA /* GlassProfileCurve.h */,
+			);
+			name = Info;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +281,12 @@
 				256AC3DA0F4B6AC300CF3369 /* MeltyGlassAppDelegate.m in Sources */,
 				F87011191126C34B0000F302 /* BaseOpenGLView.mm in Sources */,
 				F8701139112757130000F302 /* Trackball.cpp in Sources */,
+				F8A96C95118996B1009C77AA /* MeltyGlassOpenGLView.mm in Sources */,
+				F8A96CAF118996F6009C77AA /* ParametricSurface.m in Sources */,
+				F8A96CB2118996FE009C77AA /* SurfaceOfRevolution.m in Sources */,
+				F8A96CB511899707009C77AA /* ParametricCurve.m in Sources */,
+				F8A96CB81189970F009C77AA /* BezierCurve.m in Sources */,
+				F8A96CBB1189971C009C77AA /* Path.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
