@@ -22,7 +22,59 @@
 		F8A96CB511899707009C77AA /* ParametricCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A96CB411899707009C77AA /* ParametricCurve.m */; };
 		F8A96CB81189970F009C77AA /* BezierCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A96CB71189970F009C77AA /* BezierCurve.m */; };
 		F8A96CBB1189971C009C77AA /* Path.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A96CBA1189971C009C77AA /* Path.m */; };
+		F8CD6040118CD9E20021D507 /* RenderObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = F8CD603F118CD9E20021D507 /* RenderObject.mm */; };
+		F8CD687F11912EE30021D507 /* MeltyGlassObjectContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CD687E11912EE30021D507 /* MeltyGlassObjectContainer.m */; };
+		F8CD68A11191559E0021D507 /* RenderMode.mm in Sources */ = {isa = PBXBuildFile; fileRef = F8CD689C1191559E0021D507 /* RenderMode.mm */; };
+		F8CD68A21191559E0021D507 /* RenderModeWireframe.mm in Sources */ = {isa = PBXBuildFile; fileRef = F8CD689E1191559E0021D507 /* RenderModeWireframe.mm */; };
+		F8CD68A31191559E0021D507 /* RenderModeWithShader.mm in Sources */ = {isa = PBXBuildFile; fileRef = F8CD68A01191559E0021D507 /* RenderModeWithShader.mm */; };
+		F8CD68B4119157D00021D507 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8CD68B2119157D00021D507 /* Shader.cpp */; };
+		F8CD6963119162CE0021D507 /* Feedback.FS in Copy Shaders */ = {isa = PBXBuildFile; fileRef = F8CD695F119162CE0021D507 /* Feedback.FS */; };
+		F8CD6964119162CE0021D507 /* Feedback.VS in Copy Shaders */ = {isa = PBXBuildFile; fileRef = F8CD6960119162CE0021D507 /* Feedback.VS */; };
+		F8CD6965119162CE0021D507 /* Refractive.FS in Copy Shaders */ = {isa = PBXBuildFile; fileRef = F8CD6961119162CE0021D507 /* Refractive.FS */; };
+		F8CD6966119162CE0021D507 /* Refractive.VS in Copy Shaders */ = {isa = PBXBuildFile; fileRef = F8CD6962119162CE0021D507 /* Refractive.VS */; };
+		F8CD6992119168180021D507 /* negx.jpg in Copy SwedishRoyalCastle */ = {isa = PBXBuildFile; fileRef = F8CD698C119168180021D507 /* negx.jpg */; };
+		F8CD6993119168180021D507 /* negy.jpg in Copy SwedishRoyalCastle */ = {isa = PBXBuildFile; fileRef = F8CD698D119168180021D507 /* negy.jpg */; };
+		F8CD6994119168180021D507 /* negz.jpg in Copy SwedishRoyalCastle */ = {isa = PBXBuildFile; fileRef = F8CD698E119168180021D507 /* negz.jpg */; };
+		F8CD6995119168180021D507 /* posx.jpg in Copy SwedishRoyalCastle */ = {isa = PBXBuildFile; fileRef = F8CD698F119168180021D507 /* posx.jpg */; };
+		F8CD6996119168180021D507 /* posy.jpg in Copy SwedishRoyalCastle */ = {isa = PBXBuildFile; fileRef = F8CD6990119168180021D507 /* posy.jpg */; };
+		F8CD6997119168180021D507 /* posz.jpg in Copy SwedishRoyalCastle */ = {isa = PBXBuildFile; fileRef = F8CD6991119168180021D507 /* posz.jpg */; };
+		F8CD6999119168CF0021D507 /* readme.txt in Copy SwedishRoyalCastle */ = {isa = PBXBuildFile; fileRef = F8CD6998119168CF0021D507 /* readme.txt */; };
+		F8CD69A4119169B50021D507 /* CubeMap.mm in Sources */ = {isa = PBXBuildFile; fileRef = F8CD69A3119169B50021D507 /* CubeMap.mm */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F8CD697B119164390021D507 /* Copy Shaders */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Shaders/.;
+			dstSubfolderSpec = 7;
+			files = (
+				F8CD6963119162CE0021D507 /* Feedback.FS in Copy Shaders */,
+				F8CD6964119162CE0021D507 /* Feedback.VS in Copy Shaders */,
+				F8CD6965119162CE0021D507 /* Refractive.FS in Copy Shaders */,
+				F8CD6966119162CE0021D507 /* Refractive.VS in Copy Shaders */,
+			);
+			name = "Copy Shaders";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8CD699E1191690B0021D507 /* Copy SwedishRoyalCastle */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = CubeMaps/SwedishRoyalCastle/.;
+			dstSubfolderSpec = 7;
+			files = (
+				F8CD6992119168180021D507 /* negx.jpg in Copy SwedishRoyalCastle */,
+				F8CD6993119168180021D507 /* negy.jpg in Copy SwedishRoyalCastle */,
+				F8CD6994119168180021D507 /* negz.jpg in Copy SwedishRoyalCastle */,
+				F8CD6995119168180021D507 /* posx.jpg in Copy SwedishRoyalCastle */,
+				F8CD6996119168180021D507 /* posy.jpg in Copy SwedishRoyalCastle */,
+				F8CD6997119168180021D507 /* posz.jpg in Copy SwedishRoyalCastle */,
+				F8CD6999119168CF0021D507 /* readme.txt in Copy SwedishRoyalCastle */,
+			);
+			name = "Copy SwedishRoyalCastle";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -55,7 +107,32 @@
 		F8A96CB71189970F009C77AA /* BezierCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BezierCurve.m; path = objects/bezier/BezierCurve.m; sourceTree = "<group>"; };
 		F8A96CB91189971C009C77AA /* Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Path.h; path = objects/Path.h; sourceTree = "<group>"; };
 		F8A96CBA1189971C009C77AA /* Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Path.m; path = objects/Path.m; sourceTree = "<group>"; };
-		F8A96CBC1189974E009C77AA /* GlassProfileCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlassProfileCurve.h; sourceTree = "<group>"; };
+		F8A96CBC1189974E009C77AA /* GlassProfileCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlassProfileCurve.h; path = resources/GlassProfileCurve.h; sourceTree = "<group>"; };
+		F8CD603E118CD9E20021D507 /* RenderObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderObject.h; path = graphics/objects/RenderObject.h; sourceTree = "<group>"; };
+		F8CD603F118CD9E20021D507 /* RenderObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RenderObject.mm; path = graphics/objects/RenderObject.mm; sourceTree = "<group>"; };
+		F8CD687D11912EE30021D507 /* MeltyGlassObjectContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeltyGlassObjectContainer.h; sourceTree = "<group>"; };
+		F8CD687E11912EE30021D507 /* MeltyGlassObjectContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeltyGlassObjectContainer.m; sourceTree = "<group>"; };
+		F8CD689B1191559E0021D507 /* RenderMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderMode.h; path = graphics/modes/RenderMode.h; sourceTree = "<group>"; };
+		F8CD689C1191559E0021D507 /* RenderMode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RenderMode.mm; path = graphics/modes/RenderMode.mm; sourceTree = "<group>"; };
+		F8CD689D1191559E0021D507 /* RenderModeWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderModeWireframe.h; path = graphics/modes/RenderModeWireframe.h; sourceTree = "<group>"; };
+		F8CD689E1191559E0021D507 /* RenderModeWireframe.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RenderModeWireframe.mm; path = graphics/modes/RenderModeWireframe.mm; sourceTree = "<group>"; };
+		F8CD689F1191559E0021D507 /* RenderModeWithShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderModeWithShader.h; path = graphics/modes/RenderModeWithShader.h; sourceTree = "<group>"; };
+		F8CD68A01191559E0021D507 /* RenderModeWithShader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RenderModeWithShader.mm; path = graphics/modes/RenderModeWithShader.mm; sourceTree = "<group>"; };
+		F8CD68B2119157D00021D507 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Shader.cpp; path = graphics/shader/Shader.cpp; sourceTree = "<group>"; };
+		F8CD68B3119157D00021D507 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shader.h; path = graphics/shader/Shader.h; sourceTree = "<group>"; };
+		F8CD695F119162CE0021D507 /* Feedback.FS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Feedback.FS; path = resources/Shaders/Feedback.FS; sourceTree = "<group>"; };
+		F8CD6960119162CE0021D507 /* Feedback.VS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Feedback.VS; path = resources/Shaders/Feedback.VS; sourceTree = "<group>"; };
+		F8CD6961119162CE0021D507 /* Refractive.FS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Refractive.FS; path = resources/Shaders/Refractive.FS; sourceTree = "<group>"; };
+		F8CD6962119162CE0021D507 /* Refractive.VS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Refractive.VS; path = resources/Shaders/Refractive.VS; sourceTree = "<group>"; };
+		F8CD698C119168180021D507 /* negx.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = negx.jpg; path = resources/SwedishRoyalCastle/negx.jpg; sourceTree = "<group>"; };
+		F8CD698D119168180021D507 /* negy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = negy.jpg; path = resources/SwedishRoyalCastle/negy.jpg; sourceTree = "<group>"; };
+		F8CD698E119168180021D507 /* negz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = negz.jpg; path = resources/SwedishRoyalCastle/negz.jpg; sourceTree = "<group>"; };
+		F8CD698F119168180021D507 /* posx.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = posx.jpg; path = resources/SwedishRoyalCastle/posx.jpg; sourceTree = "<group>"; };
+		F8CD6990119168180021D507 /* posy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = posy.jpg; path = resources/SwedishRoyalCastle/posy.jpg; sourceTree = "<group>"; };
+		F8CD6991119168180021D507 /* posz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = posz.jpg; path = resources/SwedishRoyalCastle/posz.jpg; sourceTree = "<group>"; };
+		F8CD6998119168CF0021D507 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = readme.txt; path = resources/SwedishRoyalCastle/readme.txt; sourceTree = "<group>"; };
+		F8CD69A2119169B50021D507 /* CubeMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CubeMap.h; path = graphics/cubemaps/CubeMap.h; sourceTree = "<group>"; };
+		F8CD69A3119169B50021D507 /* CubeMap.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CubeMap.mm; path = graphics/cubemaps/CubeMap.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +152,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F8CD6037118CD99F0021D507 /* Graphics */,
 				F8A96C9D118996B7009C77AA /* Objects */,
 				F8701135112757070000F302 /* Trackball */,
 				F87011171126C34B0000F302 /* BaseOpenGLView.h */,
@@ -83,6 +161,8 @@
 				256AC3D90F4B6AC300CF3369 /* MeltyGlassAppDelegate.m */,
 				F8A96C93118996B1009C77AA /* MeltyGlassOpenGLView.h */,
 				F8A96C94118996B1009C77AA /* MeltyGlassOpenGLView.mm */,
+				F8CD687D11912EE30021D507 /* MeltyGlassObjectContainer.h */,
+				F8CD687E11912EE30021D507 /* MeltyGlassObjectContainer.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -118,7 +198,7 @@
 		29B97314FDCFA39411CA2CEA /* BaseGL */ = {
 			isa = PBXGroup;
 			children = (
-				F8A96CBD11899754009C77AA /* Info */,
+				F8A96CBD11899754009C77AA /* Resources */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -214,12 +294,98 @@
 			name = SurfaceOfRevolution;
 			sourceTree = "<group>";
 		};
-		F8A96CBD11899754009C77AA /* Info */ = {
+		F8A96CBD11899754009C77AA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F8CD6987119167F50021D507 /* CubeMaps */,
+				F8CD695D119162BE0021D507 /* Shader */,
 				F8A96CBC1189974E009C77AA /* GlassProfileCurve.h */,
 			);
-			name = Info;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F8CD6037118CD99F0021D507 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				F8CD699F1191698A0021D507 /* CubeMaps */,
+				F8CD68A81191578F0021D507 /* Shader */,
+				F8CD6886119154430021D507 /* Modes */,
+				F8CD6038118CD9AD0021D507 /* Objects */,
+			);
+			name = Graphics;
+			sourceTree = "<group>";
+		};
+		F8CD6038118CD9AD0021D507 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				F8CD603E118CD9E20021D507 /* RenderObject.h */,
+				F8CD603F118CD9E20021D507 /* RenderObject.mm */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		F8CD6886119154430021D507 /* Modes */ = {
+			isa = PBXGroup;
+			children = (
+				F8CD689B1191559E0021D507 /* RenderMode.h */,
+				F8CD689C1191559E0021D507 /* RenderMode.mm */,
+				F8CD689D1191559E0021D507 /* RenderModeWireframe.h */,
+				F8CD689E1191559E0021D507 /* RenderModeWireframe.mm */,
+				F8CD689F1191559E0021D507 /* RenderModeWithShader.h */,
+				F8CD68A01191559E0021D507 /* RenderModeWithShader.mm */,
+			);
+			name = Modes;
+			sourceTree = "<group>";
+		};
+		F8CD68A81191578F0021D507 /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				F8CD68B2119157D00021D507 /* Shader.cpp */,
+				F8CD68B3119157D00021D507 /* Shader.h */,
+			);
+			name = Shader;
+			sourceTree = "<group>";
+		};
+		F8CD695D119162BE0021D507 /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				F8CD695F119162CE0021D507 /* Feedback.FS */,
+				F8CD6960119162CE0021D507 /* Feedback.VS */,
+				F8CD6961119162CE0021D507 /* Refractive.FS */,
+				F8CD6962119162CE0021D507 /* Refractive.VS */,
+			);
+			name = Shader;
+			sourceTree = "<group>";
+		};
+		F8CD6987119167F50021D507 /* CubeMaps */ = {
+			isa = PBXGroup;
+			children = (
+				F8CD6988119167FE0021D507 /* SwedishRoyalCastle */,
+			);
+			name = CubeMaps;
+			sourceTree = "<group>";
+		};
+		F8CD6988119167FE0021D507 /* SwedishRoyalCastle */ = {
+			isa = PBXGroup;
+			children = (
+				F8CD6998119168CF0021D507 /* readme.txt */,
+				F8CD698C119168180021D507 /* negx.jpg */,
+				F8CD698D119168180021D507 /* negy.jpg */,
+				F8CD698E119168180021D507 /* negz.jpg */,
+				F8CD698F119168180021D507 /* posx.jpg */,
+				F8CD6990119168180021D507 /* posy.jpg */,
+				F8CD6991119168180021D507 /* posz.jpg */,
+			);
+			name = SwedishRoyalCastle;
+			sourceTree = "<group>";
+		};
+		F8CD699F1191698A0021D507 /* CubeMaps */ = {
+			isa = PBXGroup;
+			children = (
+				F8CD69A2119169B50021D507 /* CubeMap.h */,
+				F8CD69A3119169B50021D507 /* CubeMap.mm */,
+			);
+			name = CubeMaps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +395,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "MeltyGlass" */;
 			buildPhases = (
+				F8CD699E1191690B0021D507 /* Copy SwedishRoyalCastle */,
+				F8CD697B119164390021D507 /* Copy Shaders */,
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
@@ -287,6 +455,13 @@
 				F8A96CB511899707009C77AA /* ParametricCurve.m in Sources */,
 				F8A96CB81189970F009C77AA /* BezierCurve.m in Sources */,
 				F8A96CBB1189971C009C77AA /* Path.m in Sources */,
+				F8CD6040118CD9E20021D507 /* RenderObject.mm in Sources */,
+				F8CD687F11912EE30021D507 /* MeltyGlassObjectContainer.m in Sources */,
+				F8CD68A11191559E0021D507 /* RenderMode.mm in Sources */,
+				F8CD68A21191559E0021D507 /* RenderModeWireframe.mm in Sources */,
+				F8CD68A31191559E0021D507 /* RenderModeWithShader.mm in Sources */,
+				F8CD68B4119157D00021D507 /* Shader.cpp in Sources */,
+				F8CD69A4119169B50021D507 /* CubeMap.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

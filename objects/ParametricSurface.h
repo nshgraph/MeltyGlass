@@ -14,12 +14,18 @@ typedef struct _NSPoint3 {
 	CGFloat z;
 } NSPoint3;
 
+@class RenderObject;
+
 
 @interface ParametricSurface : NSObject {
 
 }
 
+-(RenderObject*) createRenderObjectWithResT: (int) resT andResS: (int) resS;
+
 
 -(NSPoint3) pointOnSurfaceT:(double) t S:(double) s;
+
+-(NSPoint3) normalOnSurfaceT:(double) t S:(double) s;
 
 @end

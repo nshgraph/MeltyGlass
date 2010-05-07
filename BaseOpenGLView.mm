@@ -123,6 +123,12 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 
 - (void) initializeView
 {
+	glEnable(GL_DEPTH_TEST);
+	
+	glShadeModel(GL_SMOOTH);
+	glPolygonOffset (1.0f, 1.0f);
+	
+	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 }
 
 - (void) draw
@@ -141,21 +147,26 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 	// remember to lock the context before we touch it since display link is threaded
 	CGLLockContext((CGLContextObj)[currentContext CGLContextObj]);
 	
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	
-	glClearColor(0, 0, 0, 0);
-	glClear(GL_COLOR_BUFFER_BIT);
+
+
 	
 	glMatrixMode( GL_PROJECTION );
-	glLoadIdentity(); 
-//	gluPerspective( 65.0, bounds.size.width / bounds.size.height, 1.0, 100 );
-	
+	glLoadIdentity();
+	GLfloat radians, wd2;
+	radians = 0.0174532925 * 50 / 2; // half aperture degrees to radians 
+	wd2 = tan(radians);
+	glFrustum (-wd2, wd2, -wd2, wd2, 1.0, 100.0);	
+
 	glMatrixMode( GL_MODELVIEW );
-	
 	glLoadIdentity(); 
-//	glTranslatef( 0.0, 0.0, -100.0 );
+	gluLookAt( 0,0,3, 0,0,0,0,1,0);
+	
 	if( mbUseTrackball && mTrackball )
 		mTrackball->tbMatrix();
 	
+	glEnable(GL_DEPTH_TEST);
 	
 	[self draw];
 	

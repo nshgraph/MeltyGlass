@@ -18,4 +18,11 @@
 	return ret;
 }
 
+// This method should bo overridden by sub-classes
+-(NSPoint) tangentOnCurve:(double) t
+{
+	NSPoint ret = NSMakePoint(0,0);
+	return ret;
+}
+
 @end

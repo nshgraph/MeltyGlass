@@ -43,10 +43,22 @@
 	
 	double newT = (t * [mCurves count] - curve);
 	
-	if( newT < 0.0 || newT > 1.0 )
-		printf("wrong!\n");
 	ParametricCurve* pCurve = (ParametricCurve*)[mCurves objectAtIndex: curve];
 	NSPoint ret = [pCurve pointOnCurve: newT];
+	return ret;
+}
+
+-(NSPoint) tangentOnCurve:(double) t
+{
+	int curve = t * [mCurves count];
+	// for rounding errors
+	if( curve >= [mCurves count] )
+		curve = [mCurves count] - 1;
+	
+	double newT = (t * [mCurves count] - curve);
+	
+	ParametricCurve* pCurve = (ParametricCurve*)[mCurves objectAtIndex: curve];
+	NSPoint ret = [pCurve tangentOnCurve: newT];
 	return ret;
 }
 

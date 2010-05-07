@@ -37,10 +37,35 @@
 	if( mPath )
 	{
 		NSPoint onPath = [mPath pointOnCurve: t];
-		ret.x = onPath.x / 500;
-		ret.y = onPath.y * cos( 2 * pi * s ) / 500;
-		ret.z = onPath.y * sin( 2 * pi * s ) / 500;
+		ret.x = onPath.y * cos( 2 * pi * s );
+		ret.y = onPath.y * sin( 2 * pi * s );
+		ret.z = onPath.x;
 	}
+	return ret;
+}
+
+
+-(NSPoint3) normalOnSurfaceT:(double) t S:(double) s
+{
+	NSPoint3 ret;
+	ret.x = 0;
+	ret.y = 1;
+	ret.z = 0;
+	double sx = cos(2*pi*(s));
+	double sy = sin(2*pi*(s));
+	if( mPath )
+	{
+		NSPoint onPath = [mPath tangentOnCurve: t];
+		ret.x = onPath.x*sx;
+		ret.y = onPath.x*sy;
+		ret.z = onPath.y;
+	}
+	
+	double len = sqrt( ret.x*ret.x + ret.y*ret.y + ret.z*ret.z );
+	ret.x /= len;
+	ret.y /= len;
+	ret.z /= len;
+	
 	return ret;
 }
 

@@ -9,14 +9,39 @@
 #import <Cocoa/Cocoa.h>
 #import "BaseOpenGLView.h"
 
-@class ParametricSurface;
+@class RenderObject;
+@class RenderMode;
 
 @interface MeltyGlassOpenGLView : BaseOpenGLView {
-	ParametricSurface* mSurface;
+	enum{
+		MODE_WIREFRAME,
+		MODE_LIGHTING,
+		MODE_TRANSPARENT,
+		MODE_NUM_MODES
+	};
+	
+	enum {
+		OBJ_GLASS1,
+		OBJ_GLASS2,
+		OBJ_NUM_OBJECTS
+	};
+	
+	RenderObject* mObjects[2];
+	int mObjectIndex;
+	
+	RenderMode* mModes[MODE_NUM_MODES];
+	int mModeIndex;
 }
+-(void)dealloc;
+
 
 // the big ones - should be overwritten
 - (void) initializeView;
 - (void) draw;
+
+//Custom ones
+- (void) setMode: (int) mode;
+
+- (void) setObject: (int) obj;
 
 @end

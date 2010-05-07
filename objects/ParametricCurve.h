@@ -15,4 +15,6 @@
 
 -(NSPoint) pointOnCurve:(double) t;
 
+-(NSPoint) tangentOnCurve:(double) t;
+
 @end

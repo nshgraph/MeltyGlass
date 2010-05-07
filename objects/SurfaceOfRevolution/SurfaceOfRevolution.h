@@ -19,4 +19,6 @@
 
 -(NSPoint3) pointOnSurfaceT:(double) t S:(double) s;
 
+-(NSPoint3) normalOnSurfaceT:(double) t S:(double) s;
+
 @end

@@ -28,6 +28,22 @@ double Basis(int n,int i,float t)
 	return coefficient(i, n) * pow(t,i) * pow(1.0 - t, n-i);
 }
 
+double Basis_Derv(int n,int i,float t)
+{ 
+	switch( i )
+	{
+		case 0:
+			return -3*(1-t)*(1-t);
+		case 1:
+			return -6*t*(1-t) + 3*(1-t)*(1-t);
+		case 2:
+			return -3*t*t + 6*t*(1-t);
+		case 3:
+			return 3*t*t;
+	}
+	return 0;
+}
+
 
 
 
@@ -66,6 +82,20 @@ double Basis(int n,int i,float t)
 		bern = Basis([mControlPoints count]-1, i, t);
 		ret.x += [[mControlPoints objectAtIndex: i] pointValue].x * bern;
 		ret.y += [[mControlPoints objectAtIndex: i] pointValue].y * bern;
+	}
+	return ret;
+}
+
+// This method should bo overridden by sub-classes
+-(NSPoint) tangentOnCurve:(double) t
+{
+	NSPoint ret = NSMakePoint(0,0);
+	double bern;
+	for( int i=0; i < [mControlPoints count]; i++ )
+	{
+		bern = Basis_Derv([mControlPoints count], i, t);
+		ret.x += [[mControlPoints objectAtIndex: i] pointValue].x * bern;
+		ret.y -= [[mControlPoints objectAtIndex: i] pointValue].y * bern;
 	}
 	return ret;
 }

@@ -19,6 +19,7 @@
 
 -(NSPoint) pointOnCurve:(double) t;
 
+-(NSPoint) tangentOnCurve:(double) t;
 
 +(Path*) parseBezierPath:(NSURL*)url_to_path;
 
