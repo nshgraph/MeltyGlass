@@ -21,4 +21,9 @@
 	[glView setObject: which];
 }
 
+- (IBAction)ReloadShaders:(id)sender
+{
+	[glView reloadShaders];
+}
+
 @end

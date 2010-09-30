@@ -16,4 +16,6 @@
 - (IBAction)ChangeViewMode:(id)sender;
 - (IBAction)ChangeViewObject:(id)sender;
 
+- (IBAction)ReloadShaders:(id)sender;
+
 @end

@@ -14,7 +14,6 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		F87011141126C2DA0000F302 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87011131126C2DA0000F302 /* OpenGL.framework */; };
 		F87011191126C34B0000F302 /* BaseOpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = F87011181126C34B0000F302 /* BaseOpenGLView.mm */; };
-		F8701139112757130000F302 /* Trackball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8701137112757130000F302 /* Trackball.cpp */; };
 		F87011B311277CD40000F302 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87011B211277CD40000F302 /* QuartzCore.framework */; };
 		F8A96C95118996B1009C77AA /* MeltyGlassOpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = F8A96C94118996B1009C77AA /* MeltyGlassOpenGLView.mm */; };
 		F8A96CAF118996F6009C77AA /* ParametricSurface.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A96CAE118996F6009C77AA /* ParametricSurface.m */; };
@@ -40,6 +39,14 @@
 		F8CD6997119168180021D507 /* posz.jpg in Copy SwedishRoyalCastle */ = {isa = PBXBuildFile; fileRef = F8CD6991119168180021D507 /* posz.jpg */; };
 		F8CD6999119168CF0021D507 /* readme.txt in Copy SwedishRoyalCastle */ = {isa = PBXBuildFile; fileRef = F8CD6998119168CF0021D507 /* readme.txt */; };
 		F8CD69A4119169B50021D507 /* CubeMap.mm in Sources */ = {isa = PBXBuildFile; fileRef = F8CD69A3119169B50021D507 /* CubeMap.mm */; };
+		FB0EE3971234C9B200DF9184 /* HalfCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0EE3961234C9B200DF9184 /* HalfCircle.m */; };
+		FB544EF91235A68A00E3D0B7 /* MouseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FB544EF41235A68A00E3D0B7 /* MouseHandler.m */; };
+		FB544EFA1235A68A00E3D0B7 /* MouseHandlerAffect.m in Sources */ = {isa = PBXBuildFile; fileRef = FB544EF61235A68A00E3D0B7 /* MouseHandlerAffect.m */; };
+		FB544EFB1235A68A00E3D0B7 /* MouseHandlerTrackball.mm in Sources */ = {isa = PBXBuildFile; fileRef = FB544EF81235A68A00E3D0B7 /* MouseHandlerTrackball.mm */; };
+		FB544F141235AA1B00E3D0B7 /* trackball.c in Sources */ = {isa = PBXBuildFile; fileRef = FB544F121235AA1B00E3D0B7 /* trackball.c */; };
+		FBF5E8AC12376DB4004253BF /* GLFBO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBF5E8AA12376DB4004253BF /* GLFBO.cpp */; };
+		FBF5E8B212376DD1004253BF /* RenderToBuffer.mm in Sources */ = {isa = PBXBuildFile; fileRef = FBF5E8B112376DD1004253BF /* RenderToBuffer.mm */; };
+		FBF5E8B712376DF4004253BF /* Melt.mm in Sources */ = {isa = PBXBuildFile; fileRef = FBF5E8B612376DF4004253BF /* Melt.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -92,8 +99,6 @@
 		F87011131126C2DA0000F302 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		F87011171126C34B0000F302 /* BaseOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseOpenGLView.h; sourceTree = "<group>"; };
 		F87011181126C34B0000F302 /* BaseOpenGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaseOpenGLView.mm; sourceTree = "<group>"; };
-		F8701137112757130000F302 /* Trackball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Trackball.cpp; path = trackball/Trackball.cpp; sourceTree = "<group>"; };
-		F8701138112757130000F302 /* Trackball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Trackball.h; path = trackball/Trackball.h; sourceTree = "<group>"; };
 		F87011B211277CD40000F302 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F8A96C93118996B1009C77AA /* MeltyGlassOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeltyGlassOpenGLView.h; sourceTree = "<group>"; };
 		F8A96C94118996B1009C77AA /* MeltyGlassOpenGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MeltyGlassOpenGLView.mm; sourceTree = "<group>"; };
@@ -133,6 +138,22 @@
 		F8CD6998119168CF0021D507 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = readme.txt; path = resources/SwedishRoyalCastle/readme.txt; sourceTree = "<group>"; };
 		F8CD69A2119169B50021D507 /* CubeMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CubeMap.h; path = graphics/cubemaps/CubeMap.h; sourceTree = "<group>"; };
 		F8CD69A3119169B50021D507 /* CubeMap.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CubeMap.mm; path = graphics/cubemaps/CubeMap.mm; sourceTree = "<group>"; };
+		FB0EE3951234C9B200DF9184 /* HalfCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HalfCircle.h; path = objects/HalfCircle/HalfCircle.h; sourceTree = "<group>"; };
+		FB0EE3961234C9B200DF9184 /* HalfCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HalfCircle.m; path = objects/HalfCircle/HalfCircle.m; sourceTree = "<group>"; };
+		FB544EF31235A68A00E3D0B7 /* MouseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MouseHandler.h; sourceTree = "<group>"; };
+		FB544EF41235A68A00E3D0B7 /* MouseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MouseHandler.m; sourceTree = "<group>"; };
+		FB544EF51235A68A00E3D0B7 /* MouseHandlerAffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MouseHandlerAffect.h; sourceTree = "<group>"; };
+		FB544EF61235A68A00E3D0B7 /* MouseHandlerAffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MouseHandlerAffect.m; sourceTree = "<group>"; };
+		FB544EF71235A68A00E3D0B7 /* MouseHandlerTrackball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MouseHandlerTrackball.h; sourceTree = "<group>"; };
+		FB544EF81235A68A00E3D0B7 /* MouseHandlerTrackball.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MouseHandlerTrackball.mm; sourceTree = "<group>"; };
+		FB544F121235AA1B00E3D0B7 /* trackball.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trackball.c; sourceTree = "<group>"; };
+		FB544F131235AA1B00E3D0B7 /* trackball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trackball.h; sourceTree = "<group>"; };
+		FBF5E8AA12376DB4004253BF /* GLFBO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GLFBO.cpp; path = graphics/fbo/GLFBO.cpp; sourceTree = "<group>"; };
+		FBF5E8AB12376DB4004253BF /* GLFBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLFBO.h; path = graphics/fbo/GLFBO.h; sourceTree = "<group>"; };
+		FBF5E8B012376DD1004253BF /* RenderToBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderToBuffer.h; path = graphics/render_to_buffers/RenderToBuffer.h; sourceTree = "<group>"; };
+		FBF5E8B112376DD1004253BF /* RenderToBuffer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RenderToBuffer.mm; path = graphics/render_to_buffers/RenderToBuffer.mm; sourceTree = "<group>"; };
+		FBF5E8B512376DF4004253BF /* Melt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Melt.h; sourceTree = "<group>"; };
+		FBF5E8B612376DF4004253BF /* Melt.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Melt.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +175,7 @@
 			children = (
 				F8CD6037118CD99F0021D507 /* Graphics */,
 				F8A96C9D118996B7009C77AA /* Objects */,
-				F8701135112757070000F302 /* Trackball */,
+				FB544EF21235A68A00E3D0B7 /* mouse_handlers */,
 				F87011171126C34B0000F302 /* BaseOpenGLView.h */,
 				F87011181126C34B0000F302 /* BaseOpenGLView.mm */,
 				256AC3D80F4B6AC300CF3369 /* MeltyGlassAppDelegate.h */,
@@ -236,15 +257,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F8701135112757070000F302 /* Trackball */ = {
-			isa = PBXGroup;
-			children = (
-				F8701137112757130000F302 /* Trackball.cpp */,
-				F8701138112757130000F302 /* Trackball.h */,
-			);
-			name = Trackball;
-			sourceTree = "<group>";
-		};
 		F8A96C9D118996B7009C77AA /* Objects */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +283,7 @@
 				F8A96CB311899707009C77AA /* ParametricCurve.h */,
 				F8A96CB411899707009C77AA /* ParametricCurve.m */,
 				F8A96C9E118996BD009C77AA /* Bezier */,
+				FB0EE3941234C98500DF9184 /* HalfCircle */,
 			);
 			name = Curves;
 			sourceTree = "<group>";
@@ -307,6 +320,8 @@
 		F8CD6037118CD99F0021D507 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				FBF5E8AD12376DB9004253BF /* RenderToBuffer */,
+				FBF5E89912375F38004253BF /* GLFBO */,
 				F8CD699F1191698A0021D507 /* CubeMaps */,
 				F8CD68A81191578F0021D507 /* Shader */,
 				F8CD6886119154430021D507 /* Modes */,
@@ -388,6 +403,58 @@
 			name = CubeMaps;
 			sourceTree = "<group>";
 		};
+		FB0EE3941234C98500DF9184 /* HalfCircle */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EE3951234C9B200DF9184 /* HalfCircle.h */,
+				FB0EE3961234C9B200DF9184 /* HalfCircle.m */,
+			);
+			name = HalfCircle;
+			sourceTree = "<group>";
+		};
+		FB544EF21235A68A00E3D0B7 /* mouse_handlers */ = {
+			isa = PBXGroup;
+			children = (
+				FB544EF31235A68A00E3D0B7 /* MouseHandler.h */,
+				FB544EF41235A68A00E3D0B7 /* MouseHandler.m */,
+				FB544EF51235A68A00E3D0B7 /* MouseHandlerAffect.h */,
+				FB544EF61235A68A00E3D0B7 /* MouseHandlerAffect.m */,
+				FB544EF71235A68A00E3D0B7 /* MouseHandlerTrackball.h */,
+				FB544EF81235A68A00E3D0B7 /* MouseHandlerTrackball.mm */,
+				FB544F121235AA1B00E3D0B7 /* trackball.c */,
+				FB544F131235AA1B00E3D0B7 /* trackball.h */,
+			);
+			path = mouse_handlers;
+			sourceTree = "<group>";
+		};
+		FBF5E89912375F38004253BF /* GLFBO */ = {
+			isa = PBXGroup;
+			children = (
+				FBF5E8AA12376DB4004253BF /* GLFBO.cpp */,
+				FBF5E8AB12376DB4004253BF /* GLFBO.h */,
+			);
+			name = GLFBO;
+			sourceTree = "<group>";
+		};
+		FBF5E8AD12376DB9004253BF /* RenderToBuffer */ = {
+			isa = PBXGroup;
+			children = (
+				FBF5E8AE12376DC2004253BF /* Melt */,
+				FBF5E8B012376DD1004253BF /* RenderToBuffer.h */,
+				FBF5E8B112376DD1004253BF /* RenderToBuffer.mm */,
+			);
+			name = RenderToBuffer;
+			sourceTree = "<group>";
+		};
+		FBF5E8AE12376DC2004253BF /* Melt */ = {
+			isa = PBXGroup;
+			children = (
+				FBF5E8B512376DF4004253BF /* Melt.h */,
+				FBF5E8B612376DF4004253BF /* Melt.mm */,
+			);
+			name = Melt;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -448,7 +515,6 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				256AC3DA0F4B6AC300CF3369 /* MeltyGlassAppDelegate.m in Sources */,
 				F87011191126C34B0000F302 /* BaseOpenGLView.mm in Sources */,
-				F8701139112757130000F302 /* Trackball.cpp in Sources */,
 				F8A96C95118996B1009C77AA /* MeltyGlassOpenGLView.mm in Sources */,
 				F8A96CAF118996F6009C77AA /* ParametricSurface.m in Sources */,
 				F8A96CB2118996FE009C77AA /* SurfaceOfRevolution.m in Sources */,
@@ -462,6 +528,14 @@
 				F8CD68A31191559E0021D507 /* RenderModeWithShader.mm in Sources */,
 				F8CD68B4119157D00021D507 /* Shader.cpp in Sources */,
 				F8CD69A4119169B50021D507 /* CubeMap.mm in Sources */,
+				FB0EE3971234C9B200DF9184 /* HalfCircle.m in Sources */,
+				FB544EF91235A68A00E3D0B7 /* MouseHandler.m in Sources */,
+				FB544EFA1235A68A00E3D0B7 /* MouseHandlerAffect.m in Sources */,
+				FB544EFB1235A68A00E3D0B7 /* MouseHandlerTrackball.mm in Sources */,
+				FB544F141235AA1B00E3D0B7 /* trackball.c in Sources */,
+				FBF5E8AC12376DB4004253BF /* GLFBO.cpp in Sources */,
+				FBF5E8B212376DD1004253BF /* RenderToBuffer.mm in Sources */,
+				FBF5E8B712376DF4004253BF /* Melt.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

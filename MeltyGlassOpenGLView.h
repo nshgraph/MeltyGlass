@@ -23,10 +23,11 @@
 	enum {
 		OBJ_GLASS1,
 		OBJ_GLASS2,
+		OBJ_SPHERE,
 		OBJ_NUM_OBJECTS
 	};
 	
-	RenderObject* mObjects[2];
+	RenderObject* mObjects[3];
 	int mObjectIndex;
 	
 	RenderMode* mModes[MODE_NUM_MODES];
@@ -43,5 +44,7 @@
 - (void) setMode: (int) mode;
 
 - (void) setObject: (int) obj;
+
+- (void) reloadShader;
 
 @end

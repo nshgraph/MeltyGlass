@@ -8,19 +8,25 @@
 #import <Cocoa/Cocoa.h>
 #import <QuartzCore/QuartzCore.h>
 
-class CTrackball;
+
+@class MouseHandler;
+struct MHCamera;
 
 @interface BaseOpenGLView : NSOpenGLView {
 	// Timer related   
 	CVDisplayLinkRef displayLink; //display link for managing rendering thread
 
-	
-	// Trackball
-	bool mbUseTrackball;
-	CTrackball* mTrackball;
+	MHCamera* camera;
+	MouseHandler* mouseHandler;
 }
+
 // the big ones - should be overwritten
 - (void) initializeView;
+
+- (void) resizeGL;
+- (void) updateProjection;
+- (void) updateModelView;
+
 - (void) draw;
 
 // overrides to handle fitting in NSView
@@ -30,9 +36,19 @@ class CTrackball;
 
 // mouse related events
 - (BOOL)acceptsFirstMouse:(NSEvent *)theEvent;
-- (void)mouseDown:(NSEvent *)theEvent;
-- (void)mouseDragged:(NSEvent *)theEvent;
-- (void)mouseUp:(NSEvent *)theEvent;
+- (void) mouseDown:(NSEvent *)theEvent;
+- (void) rightMouseDown:(NSEvent *)theEvent;
+- (void) otherMouseDown:(NSEvent *)theEvent;
+- (void) mouseUp:(NSEvent *)theEvent;
+- (void) rightMouseUp:(NSEvent *)theEvent;
+- (void) otherMouseUp:(NSEvent *)theEvent;
+- (void) mouseDragged:(NSEvent *)theEvent;
+- (void) scrollWheel:(NSEvent *)theEvent;
+- (void) rightMouseDragged:(NSEvent *)theEvent;
+- (void) otherMouseDragged:(NSEvent *)theEvent;
+
+- (void) resetCamera;
+
 
 // timer related
 - (void)prepareTimer;

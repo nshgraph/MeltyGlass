@@ -8,8 +8,9 @@
 #import "BaseOpenGLView.h"
 
 #include <OpenGL/gl.h> 
+#include <OpenGL/glu.h> 
 
-#include "Trackball.h"
+#import "MouseHandlerTrackball.h"
 
 @implementation BaseOpenGLView
 - (void) awakeFromNib
@@ -17,16 +18,34 @@
 	[super awakeFromNib]; 
 	
 	// set up trackball
-	mTrackball = new CTrackball();
-	mTrackball->tbInit(0);
-	
-	mTrackball->tbReshape( [self frame].size.width, [self frame].size.height );
-	mbUseTrackball = true;
+	camera = new MHCamera;
+	[self resetCamera];
+	mouseHandler = [[MouseHandlerTrackball alloc] initWithCamera:camera andView: self];
 		
 	//set up display link
 	[self prepareTimer];
 	[self initializeView];
 } 
+
+// sets the camera data to initial conditions
+- (void) resetCamera
+{
+	camera->aperture = 20;
+	camera->rotPoint.x = 0.0;
+	camera->rotPoint.y = 0.0;
+	camera->rotPoint.z = 0.0;
+	
+	camera->viewPos.x = 0.0;
+	camera->viewPos.y = 0.0;
+	camera->viewPos.z = -5.0;
+	camera->viewDir.x = -camera->viewPos.x; 
+	camera->viewDir.y = -camera->viewPos.y; 
+	camera->viewDir.z = -camera->viewPos.z;
+	
+	camera->viewUp.x = 0;  
+	camera->viewUp.y = -1;
+	camera->viewUp.z = 0;
+}
 
 
 // This is the renderer output callback function
@@ -92,33 +111,6 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 {
 	return YES;
 }
-		
-- (void)mouseDown:(NSEvent *)theEvent
-{     
-	NSPoint mouseLoc = [self convertPoint:[theEvent locationInWindow] fromView:nil];
-	NSTimeInterval mouseTime = [theEvent timestamp];
-
-	if( mTrackball )
-		mTrackball->tbMouse(0, GLUT_DOWN, mouseLoc.x, mouseLoc.y, mouseTime * 1000 );
-}
-
-- (void)mouseDragged:(NSEvent *)theEvent
-{
-	NSPoint mouseLoc = [self convertPoint:[theEvent locationInWindow] fromView:nil];
-	NSTimeInterval mouseTime = [theEvent timestamp];
-	
-	if( mTrackball )
-		mTrackball->tbMotion( mouseLoc.x, mouseLoc.y, mouseTime * 1000 );
-}
-
-- (void)mouseUp:(NSEvent *)theEvent
-{
-	NSPoint mouseLoc = [self convertPoint:[theEvent locationInWindow] fromView:nil];
-	NSTimeInterval mouseTime = [theEvent timestamp];
-	
-	if( mTrackball )
-		mTrackball->tbMouse(0, GLUT_UP, mouseLoc.x, mouseLoc.y, mouseTime * 1000 );
-}
 
 
 - (void) initializeView
@@ -129,6 +121,64 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 	glPolygonOffset (1.0f, 1.0f);
 	
 	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+}
+
+// a window dimension update, reseting of viewport and an update of the projection matrix
+- (void) resizeGL
+{
+	NSRect rectView = [self bounds];
+	
+	// ensure camera knows size changed
+	if ((camera->viewHeight != rectView.size.height) ||
+	    (camera->viewWidth != rectView.size.width)) {
+		camera->viewHeight = rectView.size.height;
+		camera->viewWidth = rectView.size.width;
+		
+		glViewport (0, 0, camera->viewWidth, camera->viewHeight);
+	}
+}
+
+- (void) updateProjection
+{
+	glMatrixMode( GL_PROJECTION );
+	glLoadIdentity();
+	
+	GLdouble ratio, radians, wd2;
+	GLdouble near, far, top, bottom, left, right;
+	near = 0.00001;
+	far = 100;
+	near = 1.0;
+	
+	radians = 0.0174532925 * camera->aperture / 2; // half aperture degrees to radians 
+	wd2 = near * tan(radians);
+	ratio = camera->viewWidth / (float) camera->viewHeight;
+	if (ratio >= 1.0) {
+		left  = -ratio * wd2;
+		right = ratio * wd2;
+		top = wd2;
+		bottom = -wd2;	
+	} else {
+		left  = -wd2;
+		right = wd2;
+		top = wd2 / ratio;
+		bottom = -wd2 / ratio;	
+	}
+	glFrustum (left, right, bottom, top, near, far);
+}
+	
+
+- (void) updateModelView
+{
+	glMatrixMode( GL_MODELVIEW );
+	glLoadIdentity(); 
+	gluLookAt (camera->viewPos.x, camera->viewPos.y, camera->viewPos.z,
+			   camera->viewPos.x + camera->viewDir.x,
+			   camera->viewPos.y + camera->viewDir.y,
+			   camera->viewPos.z + camera->viewDir.z,
+			   camera->viewUp.x, camera->viewUp.y ,camera->viewUp.z);
+	
+	if (mouseHandler)
+		[mouseHandler operateWorldTransform];
 }
 
 - (void) draw
@@ -147,26 +197,13 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 	// remember to lock the context before we touch it since display link is threaded
 	CGLLockContext((CGLContextObj)[currentContext CGLContextObj]);
 	
+	
+	[self resizeGL];
+	[self updateProjection];
+	[self updateModelView];
+	
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	
-
-
-	
-	glMatrixMode( GL_PROJECTION );
-	glLoadIdentity();
-	GLfloat radians, wd2;
-	radians = 0.0174532925 * 50 / 2; // half aperture degrees to radians 
-	wd2 = tan(radians);
-	glFrustum (-wd2, wd2, -wd2, wd2, 1.0, 100.0);	
-
-	glMatrixMode( GL_MODELVIEW );
-	glLoadIdentity(); 
-	gluLookAt( 0,0,3, 0,0,0,0,1,0);
-	
-	if( mbUseTrackball && mTrackball )
-		mTrackball->tbMatrix();
-	
-	glEnable(GL_DEPTH_TEST);
+	glEnable( GL_DEPTH_TEST );
 	
 	[self draw];
 	
@@ -178,16 +215,92 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 
 - (void)setFrameSize:(NSSize)newSize
 {
-	if( mTrackball )
-		mTrackball->tbReshape( newSize.width, newSize.height );
 	[super setFrameSize: newSize];
 }
 
 - (void)setFrame:(NSRect)frameRect
 {
-	if( mTrackball )
-		mTrackball->tbReshape( frameRect.size.width, frameRect.size.height );
 	[super setFrame: frameRect];
+}
+
+// ---------------------------------
+
+- (void)mouseDown:(NSEvent *)theEvent // trackball
+{
+	if(mouseHandler)
+		[mouseHandler mouseDown:theEvent];
+}
+
+// ---------------------------------
+
+- (void)rightMouseDown:(NSEvent *)theEvent // pan
+{
+	if(mouseHandler)
+		[mouseHandler rightMouseDown:theEvent];
+}
+
+// ---------------------------------
+
+- (void)otherMouseDown:(NSEvent *)theEvent //dolly
+{
+	if(mouseHandler)
+		[mouseHandler otherMouseDown:theEvent];
+}
+
+// ---------------------------------
+
+- (void)mouseUp:(NSEvent *)theEvent
+{
+	if(mouseHandler)
+		[mouseHandler mouseUp:theEvent];
+}
+
+// ---------------------------------
+
+- (void)rightMouseUp:(NSEvent *)theEvent
+{
+	if(mouseHandler)
+		[mouseHandler rightMouseUp:theEvent];
+}
+
+// ---------------------------------
+
+- (void)otherMouseUp:(NSEvent *)theEvent
+{
+	if(mouseHandler)
+		[mouseHandler otherMouseUp:theEvent];
+}
+
+// ---------------------------------
+
+- (void)mouseDragged:(NSEvent *)theEvent
+{
+	if(mouseHandler)
+		[mouseHandler mouseDragged:theEvent];
+}
+
+// ---------------------------------
+
+- (void)scrollWheel:(NSEvent *)theEvent
+{
+	if(mouseHandler)
+		[mouseHandler scrollWheel:theEvent];
+}
+
+// ---------------------------------
+
+- (void)rightMouseDragged:(NSEvent *)theEvent
+{
+	if(mouseHandler)
+		[mouseHandler rightMouseDragged:theEvent];
+}
+
+// ---------------------------------
+
+- (void)otherMouseDragged:(NSEvent *)theEvent
+{
+	if(mouseHandler)
+		[mouseHandler otherMouseDragged:theEvent];
 }
 
 @end

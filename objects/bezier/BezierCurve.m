@@ -91,12 +91,14 @@ double Basis_Derv(int n,int i,float t)
 {
 	NSPoint ret = NSMakePoint(0,0);
 	double bern;
+	// iterate over all points adding the influence of each point to the tangent
 	for( int i=0; i < [mControlPoints count]; i++ )
 	{
 		bern = Basis_Derv([mControlPoints count], i, t);
 		ret.x += [[mControlPoints objectAtIndex: i] pointValue].x * bern;
 		ret.y -= [[mControlPoints objectAtIndex: i] pointValue].y * bern;
 	}
+	
 	return ret;
 }
 

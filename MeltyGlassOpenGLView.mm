@@ -9,6 +9,7 @@
 #import "MeltyGlassOpenGLView.h"
 #import "Path.h"
 #import "BezierCurve.h"
+#import "HalfCircle.h"
 #import "SurfaceOfRevolution.h"
 
 #import "RenderObject.h"
@@ -77,6 +78,15 @@
 	[mObjects[OBJ_GLASS2] retain];
 	[surface release];
 	
+	
+	HalfCircle* circle = [[[HalfCircle alloc] initWithRadius: 0.5] autorelease];
+	surface = [[SurfaceOfRevolution alloc] initWithPathObj:circle];
+	// and the render object (which has the actual vertices in it
+	mObjects[OBJ_SPHERE] = [surface createRenderObjectWithResT: 256 andResS: 64];
+	[mObjects[OBJ_SPHERE] retain];
+	[surface release];
+	
+	
 	// create each render mode
 	mModes[MODE_WIREFRAME] = [[RenderModeWireframe alloc] init];
 	mModes[MODE_LIGHTING] = [[RenderMode alloc] init];
@@ -109,6 +119,7 @@
 {
 	[mObjects[OBJ_GLASS1] release];
 	[mObjects[OBJ_GLASS2] release];
+	[mObjects[OBJ_SPHERE] release];
 	
 	[mModes[MODE_WIREFRAME] release];
 	[mModes[MODE_LIGHTING] release];
@@ -141,6 +152,13 @@
 {
 	if( obj >= 0 && obj < OBJ_NUM_OBJECTS )
 		mObjectIndex = obj;
+}
+
+- (void) reloadShader
+{
+	// reloads the shader objects so that we can debug on the fly
+	[mModes[MODE_LIGHTING] reload];
+	[mModes[MODE_TRANSPARENT] reload];
 }
 
 @end

@@ -56,9 +56,11 @@
 	if( mPath )
 	{
 		NSPoint onPath = [mPath tangentOnCurve: t];
-		ret.x = onPath.x*sx;
-		ret.y = onPath.x*sy;
+		
+		ret.x = onPath.x * sx;
+		ret.y = onPath.x * sy;
 		ret.z = onPath.y;
+		
 	}
 	
 	double len = sqrt( ret.x*ret.x + ret.y*ret.y + ret.z*ret.z );

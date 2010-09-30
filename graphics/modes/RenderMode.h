@@ -15,6 +15,8 @@
 
 -(id)init;
 
+-(id)reload;
+
 -(void)renderStart;
 
 -(void)renderEnd;

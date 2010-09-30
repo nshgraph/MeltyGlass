@@ -30,6 +30,14 @@
 	return self;
 }
 
+
+-(id)reload
+{
+	shader->loadVertexShaderFromFile([vsPath cStringUsingEncoding: NSUTF8StringEncoding]);
+	shader->loadFragmentShaderFromFile([fsPath cStringUsingEncoding: NSUTF8StringEncoding]);
+	shader->compileAndLink();
+}
+
 -(void) dealloc
 {
 	if(shader)
@@ -67,6 +75,9 @@
 	glEnable(GL_LIGHTING);
 	glEnable(GL_LIGHT0);
 	
+	glEnable( GL_BLEND );
+	glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	
 	
 	glColor4f(0.0,0.0,0.0,1.0);
 	
@@ -82,7 +93,9 @@
 	[cubeMap endCubeMapTexture];
 	
 	if(shader)
+	{
 		shader->disableShader();
+	}
 	
 	glDisable(GL_LIGHT0);
 	glDisable(GL_LIGHTING);

@@ -5,7 +5,8 @@
 //  Created by Serato on 21/06/08.
 //  Copyright 2008 Serato Audio Research. All rights reserved.
 //
-#include <OpenGL/gl.h>
+#import <OpenGLES/EAGL.h>
+#import <OpenGLES/ES1/gl.h>
 
 #import "RenderObject.h"
 
@@ -39,17 +40,23 @@
 	
 	glGenBuffers(1,&drawRef);
 	glBindBuffer(GL_ARRAY_BUFFER, drawRef);
-	glBufferData(GL_ARRAY_BUFFER, numberVerts * 3 * sizeof(float), &drawRefArray, GL_STREAM_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, numberVerts * 3 * sizeof(float), &drawRefArray, GL_STATIC_DRAW);
 	
-	memset( &drawRefArray[0], 0, numberVerts * 3 * sizeof(float) );
+	for(int i=0;i<numberVerts;i++)
+	{
+		drawRefArray[i*3+0] = 1.0;
+		drawRefArray[i*3+1] = 1.0;
+		drawRefArray[i*3+2] = 1.0;
+	}
 	
 	glGenBuffers(1,&colorRef);
 	glBindBuffer(GL_ARRAY_BUFFER, colorRef);
-	glBufferData(GL_ARRAY_BUFFER, numberVerts * 3 * sizeof(float), &drawRefArray, GL_STREAM_DRAW);
+	memset( drawRefArray, 0, numberVerts * 3 * sizeof(float) );
+	glBufferData(GL_ARRAY_BUFFER, numberVerts * 3 * sizeof(float), &drawRefArray, GL_STATIC_DRAW);
 	
 	glGenBuffers(1,&normalRef);
 	glBindBuffer(GL_ARRAY_BUFFER, normalRef);
-	glBufferData(GL_ARRAY_BUFFER, numberVerts * 3 * sizeof(float), normals, GL_STREAM_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, numberVerts * 3 * sizeof(float), normals, GL_STATIC_DRAW);
 	
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 	

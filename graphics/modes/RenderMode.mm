@@ -15,25 +15,25 @@ Shader* shaderNormal;
 
 NSString* vsShadeString = @" \
 varying vec3 normal; \n\
-varying vec3 vertex; \n\
+varying vec3 eyeDir; \n\
+varying vec3 lightDir; \n\
 void main() { \n\
-gl_Position = ftransform(); \n\
 normal = normalize(gl_NormalMatrix * gl_Normal); \n\
-vertex = gl_Position.xyz; \n\
+vec3 vertex = vec3(gl_ModelViewMatrix * gl_Vertex); \n\
+lightDir = normalize(gl_LightSource[0].position.xyz - vertex); \n\
+eyeDir = normalize(-vertex); \n\
 gl_FrontColor = gl_Color; \n\
+gl_Position = ftransform(); \n\
 } \n\
 ";
 
 NSString* fsShadeString = @" \
 varying vec3 normal; \n\
-varying vec3 vertex; \n\
+varying vec3 eyeDir; \n\
+varying vec3 lightDir; \n\
 void main() { \n\
-vec3 L = normalize(gl_LightSource[0].position.xyz - vertex); \n\
-vec3 E = normalize(-vertex); \n\
-vec3 R = normalize(-reflect(L,normal)); \n\
-vec3 lightCol = vec3(0.8,0.8,0.8)*( max(dot(normal,L), 0.0) + pow(max(dot(R,E),0.0),30.0)) + vec3(0.2,0.2,0.2); \n\
-gl_FragColor = vec4(gl_Color.rgb + lightCol,1.0); \n\
-//gl_FragColor = vec4(abs(normal.x),abs(normal.y),abs(normal.z),1.0); \n\
+vec3 lightCol = vec3(0.8,0.8,0.8)*( max(dot(normal,lightDir), 0.0) + pow(max(dot(normal,normalize(lightDir+eyeDir)),0.0),30.0)) + vec3(0.2,0.2,0.2); \n\
+gl_FragColor = vec4( lightCol,1.0); \n\
 } \n\
 ";
 
@@ -43,6 +43,11 @@ gl_FragColor = vec4(gl_Color.rgb + lightCol,1.0); \n\
 	shaderNormal = new Shader();
 	shaderRequiresCompile = true;
 	return self;
+}
+
+-(id)reload
+{
+	// by default this method does nothing
 }
 
 -(void)renderStart
