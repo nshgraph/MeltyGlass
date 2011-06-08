@@ -15,9 +15,12 @@ struct MHCamera;
 @interface BaseOpenGLView : NSOpenGLView {
 	// Timer related   
 	CVDisplayLinkRef displayLink; //display link for managing rendering thread
-
+	uint64_t framePreviousTime;
+	double frameDelta;
+	
 	MHCamera* camera;
 	MouseHandler* mouseHandler;
+	
 }
 
 // the big ones - should be overwritten

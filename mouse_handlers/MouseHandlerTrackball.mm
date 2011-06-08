@@ -13,9 +13,9 @@
 
 #import "trackball.h"
 
-#define crossProduct(a,b,c) \ 
+#define crossProduct(a,b,c) \
 (a)[0] = (b)[1] * (c)[2] - (c)[1] * (b)[2]; \
-(a)[1] = (b)[2] * (c)[0] - (c)[2] * (b)[0]; \ 
+(a)[1] = (b)[2] * (c)[0] - (c)[2] * (b)[0]; \
 (a)[2] = (b)[0] * (c)[1] - (c)[0] * (b)[1];
 
 
@@ -39,6 +39,8 @@ MouseHandler * gTrackingViewInfo = NULL;
 	ssmAxis[0] = 0;
 	ssmAxis[1] = 3.1415;
 	ssmAxis[2] = 0;
+	
+	panEnabled = false;
 	
 	return self;
 }
@@ -67,6 +69,8 @@ MouseHandler * gTrackingViewInfo = NULL;
 
 - (void)rightMouseDown:(NSEvent *)theEvent // pan
 {
+	if( !panEnabled )
+		return;
 	NSPoint location = [glView convertPoint:[theEvent locationInWindow] fromView:nil];
 	location.y = camera->viewHeight - location.y;
 	if (gTrackball) { // if we are currently tracking, end trackball

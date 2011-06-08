@@ -8,7 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-
 @interface RenderObject : NSObject {
 	bool isValid;
 	bool isCompiled;

@@ -1,0 +1,4 @@
+/Users/serato/Projects/git/MeltyGlass/mouse_handlers/MouseHandlerTrackball.mm: In function 'objc_object* -[MouseHandlerTrackball initWithCamera:andView:](MouseHandlerTrackball*, objc_selector*, MHCamera*, NSOpenGLView*)':
+/Users/serato/Projects/git/MeltyGlass/mouse_handlers/MouseHandlerTrackball.mm:43: error: 'panEnabled' was not declared in this scope
+/Users/serato/Projects/git/MeltyGlass/mouse_handlers/MouseHandlerTrackball.mm: In function 'void -[MouseHandlerTrackball rightMouseDown:](MouseHandlerTrackball*, objc_selector*, NSEvent*)':
+/Users/serato/Projects/git/MeltyGlass/mouse_handlers/MouseHandlerTrackball.mm:72: error: 'panEnabled' was not declared in this scope

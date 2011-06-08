@@ -23,6 +23,7 @@
 - (void) rightMouseDragged:(NSEvent *)theEvent{}
 - (void) otherMouseDragged:(NSEvent *)theEvent{}
 
+-(void)operateWorldTransform{}
 
 -(void) glTransform{}
 

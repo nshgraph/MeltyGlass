@@ -20,11 +20,16 @@
 	int normalLocation;
 	
 	NSPoint infinity;
+	
+	// state of the current render
+	NSPoint currentAffectPoint;
+	float currentDeltaTime;
 }
 
 -(id) init;
 
--(void)renderWithObject:(RenderObject*)renderObject withDeltaTime:(float) delta andAffectPoint:(NSPoint) affect;
+-(void)renderWithDeltaTime:(float) delta;
+-(void)renderWithDeltaTime:(float) delta andAffectPoint:(NSPoint) affect;
 
 
 -(void) getShaderLocations;

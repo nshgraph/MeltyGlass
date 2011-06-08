@@ -1,0 +1,5 @@
+/Users/serato/Projects/git/MeltyGlass/objects/SurfaceOfRevolution/SurfaceOfRevolution.m: In function '-[SurfaceOfRevolution initWithParametricCurve:]':
+/Users/serato/Projects/git/MeltyGlass/objects/SurfaceOfRevolution/SurfaceOfRevolution.m:19: warning: incompatible Objective-C types assigning 'struct ParametricCurve *', expected 'struct Path *'
+/Users/serato/Projects/git/MeltyGlass/objects/SurfaceOfRevolution/SurfaceOfRevolution.m: At top level:
+/Users/serato/Projects/git/MeltyGlass/objects/SurfaceOfRevolution/SurfaceOfRevolution.m:74: warning: incomplete implementation of class 'SurfaceOfRevolution'
+/Users/serato/Projects/git/MeltyGlass/objects/SurfaceOfRevolution/SurfaceOfRevolution.m:74: warning: method definition for '-initWithPathObj:' not found

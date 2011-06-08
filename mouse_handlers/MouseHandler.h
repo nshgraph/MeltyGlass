@@ -13,7 +13,7 @@
 
 }
 
--(void) operate;
+-(void) operateWorldTransform;
 
 - (void) mouseDown:(NSEvent *)theEvent;
 - (void) rightMouseDown:(NSEvent *)theEvent;

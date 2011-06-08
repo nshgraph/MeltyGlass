@@ -16,7 +16,7 @@ public:
 	GLFBO();
 	GLFBO(const GLFBO&);
 	
-	void create(int width,int height, bool secondDrawBuffer);
+	void create(int width,int height, int num_draw_buffers);
 	void destroy();
 	
 	unsigned int getID();
@@ -24,24 +24,22 @@ public:
 	bool beginRender();
 	void endRender();
 	
-	bool beginTexture(bool getSecondBuffer = false);
+	bool beginTexture( int buffer_to_start = 0 );
 	void endTexture();
 	bool copyTexture(char* buffer, int bufferSize);
 	
-	unsigned int getTexRef(bool getSecondBuffer = false);
+	unsigned int getTexRef( int buffer_to_get = 0 );
 	int getSize();
 	
 protected:
 	
 	unsigned int FBOId;
-	unsigned int TexId0;
-	unsigned int TexId1;
-	unsigned int TexId2;
+	unsigned int TexId[3];
+	int numTexId;
 	unsigned int depthbuffer;
 	bool valid;
 	int width;
 	int height;
-	bool secondDrawBuffer;
 };
 
 

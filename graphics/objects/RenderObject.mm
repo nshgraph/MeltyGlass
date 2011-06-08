@@ -5,8 +5,8 @@
 //  Created by Serato on 21/06/08.
 //  Copyright 2008 Serato Audio Research. All rights reserved.
 //
-#import <OpenGLES/EAGL.h>
-#import <OpenGLES/ES1/gl.h>
+
+#import <OpenGL/GL.h>
 
 #import "RenderObject.h"
 
@@ -30,33 +30,26 @@
 	if(isCompiled)
 		[self destroy];
 	
-	float drawRefArray[ numberVerts * 3] ;
-	for(int i=0;i<numberVerts;i++)
-	{
-		drawRefArray[i*3+0] = vertices[i*3+0];
-		drawRefArray[i*3+1] = vertices[i*3+1];
-		drawRefArray[i*3+2] = vertices[i*3+2];
-	}
+	// need to provide a multiple of 4096 vertices (max_tex_size)
+	int num_verts_4096 = ((int)(numberVerts / 4096) + 1) * 4096;
+	
+	float drawRefArray[ num_verts_4096 * 3];
+	
 	
 	glGenBuffers(1,&drawRef);
 	glBindBuffer(GL_ARRAY_BUFFER, drawRef);
-	glBufferData(GL_ARRAY_BUFFER, numberVerts * 3 * sizeof(float), &drawRefArray, GL_STATIC_DRAW);
-	
-	for(int i=0;i<numberVerts;i++)
-	{
-		drawRefArray[i*3+0] = 1.0;
-		drawRefArray[i*3+1] = 1.0;
-		drawRefArray[i*3+2] = 1.0;
-	}
+	memcpy(drawRefArray,vertices,numberVerts*3*sizeof(float));
+	glBufferData(GL_ARRAY_BUFFER, num_verts_4096 * 3 * sizeof(float), &drawRefArray, GL_STREAM_DRAW);
 	
 	glGenBuffers(1,&colorRef);
 	glBindBuffer(GL_ARRAY_BUFFER, colorRef);
 	memset( drawRefArray, 0, numberVerts * 3 * sizeof(float) );
-	glBufferData(GL_ARRAY_BUFFER, numberVerts * 3 * sizeof(float), &drawRefArray, GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, num_verts_4096 * 3 * sizeof(float), &drawRefArray, GL_STREAM_DRAW);
 	
 	glGenBuffers(1,&normalRef);
 	glBindBuffer(GL_ARRAY_BUFFER, normalRef);
-	glBufferData(GL_ARRAY_BUFFER, numberVerts * 3 * sizeof(float), normals, GL_STATIC_DRAW);
+	memcpy( drawRefArray, normals, numberVerts * 3 * sizeof(float) );
+	glBufferData(GL_ARRAY_BUFFER, num_verts_4096 * 3 * sizeof(float), &drawRefArray, GL_STREAM_DRAW);
 	
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 	

@@ -1,0 +1,5 @@
+/Users/serato/Projects/git/MeltyGlass/Melt.mm: In function 'void -[Melt getShaderLocations](Melt*, objc_selector*)':
+/Users/serato/Projects/git/MeltyGlass/Melt.mm:51: error: 'pointLocation' was not declared in this scope
+/Users/serato/Projects/git/MeltyGlass/Melt.mm: In function 'void -[Melt setupShader](Melt*, objc_selector*)':
+/Users/serato/Projects/git/MeltyGlass/Melt.mm:84: error: 'pointLocation' was not declared in this scope
+/Users/serato/Projects/git/MeltyGlass/Melt.mm:65: warning: unused variable 'nearv'

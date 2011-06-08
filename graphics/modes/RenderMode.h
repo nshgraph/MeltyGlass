@@ -8,14 +8,21 @@
 
 #import <Cocoa/Cocoa.h>
 
+#import "Shader.h"
 
 @interface RenderMode : NSObject {
+	Shader* shader;
+	NSString* fsPath;
+	NSString* vsPath;
+	
 	bool shaderRequiresCompile;
 }
 
 -(id)init;
 
--(id)reload;
+-(void)dealloc;
+
+-(void)reload;
 
 -(void)renderStart;
 

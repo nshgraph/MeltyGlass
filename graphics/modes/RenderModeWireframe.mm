@@ -7,62 +7,37 @@
 //
 
 #import "RenderModeWireframe.h"
-#import "Shader.h"
 
 
 @implementation RenderModeWireframe
-Shader* shaderWire;
-
-NSString* vsWireString = @" \
-void main() { \n\
-gl_Position = ftransform(); \n\
-gl_FrontColor = gl_Color; \n\
-} \n\
-";
-
-NSString* fsWireString = @" \
-void main() { \n\
-gl_FragColor = vec4(gl_Color.rgb + vec3(0.3,0.3,0.3),1.0); \n\
-} \n\
-";
 
 -(id)init
 {
 	[super init];
-	shaderWire = new Shader();
+	
+	[fsPath release];
+	[vsPath release];
+	
+	
+	fsPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingString: @"/Shaders/Wireframe.FS"];
+	vsPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingString: @"/Shaders/Wireframe.VS"];
+	
+	[fsPath retain];
+	[vsPath retain];
+	
 	shaderRequiresCompile = true;
 	return self;
 }
 
 -(void)renderStart
 {
-	if(shaderRequiresCompile)
-	{
-		shaderWire->loadVertexShaderFromString([vsWireString cStringUsingEncoding: NSUTF8StringEncoding]);
-		shaderWire->loadFragmentShaderFromString([fsWireString cStringUsingEncoding: NSUTF8StringEncoding]);
-		shaderWire->compileAndLink();
-		shaderRequiresCompile = false;
-	}
-	
-//	glDisable(GL_CULL_FACE);
 	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-	
-	glColor3f(1.0,1.0,1.0);
-	
-	if(shaderWire)
-	{
-		shaderWire->enableShader();
-	}
+	[super renderStart];
 }
 
 -(void)renderEnd
 {
-	
-	if(shaderWire)
-	{
-		shaderWire->disableShader();
-	}
-	
+	[super renderEnd];
 	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 }
 

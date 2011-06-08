@@ -7,7 +7,6 @@
 //
 
 #import "RenderModeWithShader.h"
-#import "Shader.h"
 
 #import "CubeMap.h"
 
@@ -17,32 +16,18 @@
 {
 	self = [super init];
 	
+	[fsPath release];
 	fsPath = [[NSString alloc] initWithString:fragmentPath];
 	[fsPath retain];
+	[vsPath release];
 	vsPath = [[NSString alloc] initWithString:vertexPath];
 	[vsPath retain];
-	
-	shader = NULL;
-	shaderRequiresCompile = true;
-	
-	shader = new Shader();
 	
 	return self;
 }
 
-
--(id)reload
-{
-	shader->loadVertexShaderFromFile([vsPath cStringUsingEncoding: NSUTF8StringEncoding]);
-	shader->loadFragmentShaderFromFile([fsPath cStringUsingEncoding: NSUTF8StringEncoding]);
-	shader->compileAndLink();
-}
-
 -(void) dealloc
-{
-	if(shader)
-		delete shader;
-	
+{	
 	[cubeMap release];
 	
 	[fsPath release];
@@ -57,48 +42,20 @@
 }
 
 -(void)renderStart
-{
-	if(shaderRequiresCompile)
-	{
-		shader->loadVertexShaderFromFile([vsPath cStringUsingEncoding: NSUTF8StringEncoding]);
-		shader->loadFragmentShaderFromFile([fsPath cStringUsingEncoding: NSUTF8StringEncoding]);
-		shader->compileAndLink();
-		shaderRequiresCompile = false;
-	}
-	
-	
+{	
 	
 	[cubeMap renderAsCube];
 	[cubeMap beginCubeMapTexture];
 	
-//	glEnable(GL_CULL_FACE);
-	glEnable(GL_LIGHTING);
-	glEnable(GL_LIGHT0);
-	
-	glEnable( GL_BLEND );
-	glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-	
-	
-	glColor4f(0.0,0.0,0.0,1.0);
-	
-	if(shader)
-	{
-		shader->enableShader();
-	}
-	
+	[super renderStart];	
 }
 
 -(void)renderEnd
 {
+	
+	[super renderEnd];
+	
 	[cubeMap endCubeMapTexture];
-	
-	if(shader)
-	{
-		shader->disableShader();
-	}
-	
-	glDisable(GL_LIGHT0);
-	glDisable(GL_LIGHTING);
 }
 
 -(void)setCubeMap:(CubeMap*)cubeTex

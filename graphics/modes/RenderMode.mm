@@ -7,62 +7,55 @@
 //
 
 #import "RenderMode.h"
-#import "Shader.h"
-
 
 @implementation RenderMode
-Shader* shaderNormal;
-
-NSString* vsShadeString = @" \
-varying vec3 normal; \n\
-varying vec3 eyeDir; \n\
-varying vec3 lightDir; \n\
-void main() { \n\
-normal = normalize(gl_NormalMatrix * gl_Normal); \n\
-vec3 vertex = vec3(gl_ModelViewMatrix * gl_Vertex); \n\
-lightDir = normalize(gl_LightSource[0].position.xyz - vertex); \n\
-eyeDir = normalize(-vertex); \n\
-gl_FrontColor = gl_Color; \n\
-gl_Position = ftransform(); \n\
-} \n\
-";
-
-NSString* fsShadeString = @" \
-varying vec3 normal; \n\
-varying vec3 eyeDir; \n\
-varying vec3 lightDir; \n\
-void main() { \n\
-vec3 lightCol = vec3(0.8,0.8,0.8)*( max(dot(normal,lightDir), 0.0) + pow(max(dot(normal,normalize(lightDir+eyeDir)),0.0),30.0)) + vec3(0.2,0.2,0.2); \n\
-gl_FragColor = vec4( lightCol,1.0); \n\
-} \n\
-";
 
 -(id)init
 {
 	[super init];
-	shaderNormal = new Shader();
+	shader = new Shader();
+	
+	
+	fsPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingString: @"/Shaders/Default.FS"];
+	vsPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingString: @"/Shaders/Default.VS"];
+	
+	[fsPath retain];
+	[vsPath retain];
+	
 	shaderRequiresCompile = true;
 	return self;
 }
 
--(id)reload
+-(void)dealloc
+{
+	[fsPath release];
+	[vsPath release];
+	
+	[super dealloc];
+}
+
+-(void)reload
 {
 	// by default this method does nothing
+	shader->loadVertexShaderFromFile([vsPath cStringUsingEncoding: NSUTF8StringEncoding]);
+	shader->loadFragmentShaderFromFile([fsPath cStringUsingEncoding: NSUTF8StringEncoding]);
+	shader->compileAndLink();
+	shaderRequiresCompile = false;
 }
 
 -(void)renderStart
 {
 	if(shaderRequiresCompile)
 	{
-		shaderNormal->loadVertexShaderFromString([vsShadeString cStringUsingEncoding: NSUTF8StringEncoding]);
-		shaderNormal->loadFragmentShaderFromString([fsShadeString cStringUsingEncoding: NSUTF8StringEncoding]);
-		shaderNormal->compileAndLink();
+		shader->loadVertexShaderFromFile([vsPath cStringUsingEncoding: NSUTF8StringEncoding]);
+		shader->loadFragmentShaderFromFile([fsPath cStringUsingEncoding: NSUTF8StringEncoding]);
+		shader->compileAndLink();
 		shaderRequiresCompile = false;
 	}
 	
-	if(shaderNormal)
+	if(shader)
 	{
-		shaderNormal->enableShader();
+		shader->enableShader();
 	}
 	
 //	glEnable(GL_CULL_FACE);
@@ -75,9 +68,9 @@ gl_FragColor = vec4( lightCol,1.0); \n\
 -(void)renderEnd
 {
 	
-	if(shaderNormal)
+	if(shader)
 	{
-		shaderNormal->disableShader();
+		shader->disableShader();
 	}
 	
 	glDisable(GL_LIGHT0);

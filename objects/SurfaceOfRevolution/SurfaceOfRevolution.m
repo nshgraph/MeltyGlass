@@ -11,7 +11,7 @@
 
 @implementation SurfaceOfRevolution
 
--(id) initWithPathObj: (Path*) path
+-(id) initWithParametricCurve: (ParametricCurve*) path
 {
 	self = [super init];
 	if( self )

@@ -15,15 +15,9 @@ class Shader;
 
 
 @interface RenderModeWithShader : RenderMode {
-	Shader* shader;
-	NSString* fsPath;
-	NSString* vsPath;
-	
 	CubeMap* cubeMap;
 }
 -(id) initWithPathToFragmentShader: (NSString*) fragmentPath andVertexShader:(NSString*) vertexPath;
-
--(void) recompileShader;
 
 -(void) dealloc;
 

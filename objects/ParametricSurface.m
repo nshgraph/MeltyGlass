@@ -39,7 +39,7 @@
 	
 	int index;
 	NSPoint3 vertex, normal;
-	for(int lt=0; lt < resT; lt++)
+	for(int lt=0; lt <= resT; lt++)
 	{
 		for(int ls=0; ls < resS; ls++)
 		{

@@ -20,6 +20,10 @@
 
 #import "CubeMap.h"
 
+#import "Melt.h"
+
+#import "MouseHandlerAffect.h"
+
 #import "GlassProfileCurve.h"
 
 @implementation MeltyGlassOpenGLView
@@ -47,7 +51,7 @@
 		[path addCurveToPath: curve];
 	}
 	// Create the surface we wish to draw
-	ParametricSurface* surface = [[SurfaceOfRevolution alloc] initWithPathObj:path];
+	ParametricSurface* surface = [[SurfaceOfRevolution alloc] initWithParametricCurve:path];
 	// and the render object (which has the actual vertices in it
 	mObjects[OBJ_GLASS1] = [surface createRenderObjectWithResT: 256 andResS: 64];
 	[mObjects[OBJ_GLASS1] retain];
@@ -72,7 +76,7 @@
 	}
 	
 	// Create the surface we wish to draw
-	surface = [[SurfaceOfRevolution alloc] initWithPathObj:path2];
+	surface = [[SurfaceOfRevolution alloc] initWithParametricCurve:path2];
 	// and the render object (which has the actual vertices in it
 	mObjects[OBJ_GLASS2] = [surface createRenderObjectWithResT: 256 andResS: 64];
 	[mObjects[OBJ_GLASS2] retain];
@@ -80,7 +84,7 @@
 	
 	
 	HalfCircle* circle = [[[HalfCircle alloc] initWithRadius: 0.5] autorelease];
-	surface = [[SurfaceOfRevolution alloc] initWithPathObj:circle];
+	surface = [[SurfaceOfRevolution alloc] initWithParametricCurve:circle];
 	// and the render object (which has the actual vertices in it
 	mObjects[OBJ_SPHERE] = [surface createRenderObjectWithResT: 256 andResS: 64];
 	[mObjects[OBJ_SPHERE] retain];
@@ -112,6 +116,10 @@
 	
 	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 	
+	mMeltShader = [[Melt alloc] init];
+	
+	mAffectMouseHandler = [[MouseHandlerAffect alloc] initWithView: self];
+	
 	[pool release];
 }
 
@@ -125,6 +133,7 @@
 	[mModes[MODE_LIGHTING] release];
 	[mModes[MODE_TRANSPARENT] release];
 	
+	[mMeltShader release];
 	
 	[super dealloc];
 }
@@ -136,11 +145,37 @@
 	glTranslatef( 0.0 , 0.0, -0.50 );
 	int mode_index = mModeIndex;
 	int obj_index = mObjectIndex;
+	
+	
+	[mMeltShader setRenderObject: mObjects[obj_index]];
+	
+	if( [mAffectMouseHandler isActive] )
+	{
+		NSPoint affectPoint = [mAffectMouseHandler getPoint];
+		[mMeltShader renderWithDeltaTime:frameDelta andAffectPoint: affectPoint];
+	}
+	else {
+		[mMeltShader renderWithDeltaTime:frameDelta];
+	}
+	
+	static int count = 0;
+	static double time = 0.0;
+	time += frameDelta;
+	count++;
+	if (count == 30 )
+	{	
+		printf("FPS: %.2f\n", (1.0 / time) * count );
+		count = 0;
+		time = 0.0;
+	}
+	
+	
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	
 	[mModes[mode_index] renderStart];
 	[mObjects[obj_index] renderWithColor];
 	[mModes[mode_index] renderEnd];
 }
-
 
 - (void) setMode: (int) mode
 {
@@ -151,7 +186,9 @@
 - (void) setObject: (int) obj
 {
 	if( obj >= 0 && obj < OBJ_NUM_OBJECTS )
+	{
 		mObjectIndex = obj;
+	}
 }
 
 - (void) reloadShader
@@ -160,5 +197,96 @@
 	[mModes[MODE_LIGHTING] reload];
 	[mModes[MODE_TRANSPARENT] reload];
 }
+
+// ---------------------------------
+
+- (void)mouseDown:(NSEvent *)theEvent // trackball
+{
+	[super mouseDown: theEvent];
+	if(mAffectMouseHandler)
+		[mAffectMouseHandler mouseDown:theEvent];
+}
+
+// ---------------------------------
+
+- (void)rightMouseDown:(NSEvent *)theEvent // pan
+{
+	[super rightMouseDown: theEvent];
+	if(mAffectMouseHandler)
+		[mAffectMouseHandler rightMouseDown:theEvent];
+}
+
+// ---------------------------------
+
+- (void)otherMouseDown:(NSEvent *)theEvent //dolly
+{
+	[super otherMouseDown: theEvent];
+	if(mAffectMouseHandler)
+		[mAffectMouseHandler otherMouseDown:theEvent];
+}
+
+// ---------------------------------
+
+- (void)mouseUp:(NSEvent *)theEvent
+{
+	[super mouseUp: theEvent];
+	if(mAffectMouseHandler)
+		[mAffectMouseHandler mouseUp:theEvent];
+}
+
+// ---------------------------------
+
+- (void)rightMouseUp:(NSEvent *)theEvent
+{
+	[super rightMouseUp: theEvent];
+	if(mAffectMouseHandler)
+		[mAffectMouseHandler rightMouseUp:theEvent];
+}
+
+// ---------------------------------
+
+- (void)otherMouseUp:(NSEvent *)theEvent
+{
+	[super otherMouseUp: theEvent];
+	if(mAffectMouseHandler)
+		[mAffectMouseHandler otherMouseUp:theEvent];
+}
+
+// ---------------------------------
+
+- (void)mouseDragged:(NSEvent *)theEvent
+{
+	[super mouseDragged: theEvent];
+	if(mAffectMouseHandler)
+		[mAffectMouseHandler mouseDragged:theEvent];
+}
+
+// ---------------------------------
+
+- (void)scrollWheel:(NSEvent *)theEvent
+{
+	[super scrollWheel: theEvent];
+	if(mAffectMouseHandler)
+		[mAffectMouseHandler scrollWheel:theEvent];
+}
+
+// ---------------------------------
+
+- (void)rightMouseDragged:(NSEvent *)theEvent
+{
+	[super rightMouseDragged: theEvent];
+	if(mAffectMouseHandler)
+		[mAffectMouseHandler rightMouseDragged:theEvent];
+}
+
+// ---------------------------------
+
+- (void)otherMouseDragged:(NSEvent *)theEvent
+{
+	[super otherMouseDragged: theEvent];
+	if(mAffectMouseHandler)
+		[mAffectMouseHandler otherMouseDragged:theEvent];
+}
+
 
 @end

@@ -21,6 +21,9 @@
 	camera = new MHCamera;
 	[self resetCamera];
 	mouseHandler = [[MouseHandlerTrackball alloc] initWithCamera:camera andView: self];
+	
+	frameDelta = 0.0;
+	
 		
 	//set up display link
 	[self prepareTimer];
@@ -84,6 +87,8 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 	
     NSAutoreleasePool *pool;
 	
+	frameDelta = (timeStamp->videoTime - framePreviousTime) / (double)timeStamp->videoTimeScale;
+	framePreviousTime = timeStamp->videoTime;
 	
 	
     pool = [[NSAutoreleasePool alloc] init];
@@ -183,6 +188,9 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 
 - (void) draw
 {
+	
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	
 	glColor3f(1.0f, 0.85f, 0.35f); glBegin(GL_TRIANGLES); { glVertex3f( 0.0, 0.6, 0.0); glVertex3f( -0.2, -0.3, 0.0); glVertex3f( 0.2, -0.3 ,0.0); } glEnd(); 
 }
 
@@ -202,7 +210,6 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 	[self updateProjection];
 	[self updateModelView];
 	
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glEnable( GL_DEPTH_TEST );
 	
 	[self draw];

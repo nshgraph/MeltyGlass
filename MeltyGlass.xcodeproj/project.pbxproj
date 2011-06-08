@@ -44,6 +44,10 @@
 		FB544EFA1235A68A00E3D0B7 /* MouseHandlerAffect.m in Sources */ = {isa = PBXBuildFile; fileRef = FB544EF61235A68A00E3D0B7 /* MouseHandlerAffect.m */; };
 		FB544EFB1235A68A00E3D0B7 /* MouseHandlerTrackball.mm in Sources */ = {isa = PBXBuildFile; fileRef = FB544EF81235A68A00E3D0B7 /* MouseHandlerTrackball.mm */; };
 		FB544F141235AA1B00E3D0B7 /* trackball.c in Sources */ = {isa = PBXBuildFile; fileRef = FB544F121235AA1B00E3D0B7 /* trackball.c */; };
+		FBE69E22125EFB8E003412D1 /* Default.FS in Copy Shaders */ = {isa = PBXBuildFile; fileRef = FBE69E20125EFB8E003412D1 /* Default.FS */; };
+		FBE69E23125EFB8E003412D1 /* Default.VS in Copy Shaders */ = {isa = PBXBuildFile; fileRef = FBE69E21125EFB8E003412D1 /* Default.VS */; };
+		FBE69E26125EFC72003412D1 /* Wireframe.FS in Copy Shaders */ = {isa = PBXBuildFile; fileRef = FBE69E24125EFC72003412D1 /* Wireframe.FS */; };
+		FBE69E27125EFC72003412D1 /* Wireframe.VS in Copy Shaders */ = {isa = PBXBuildFile; fileRef = FBE69E25125EFC72003412D1 /* Wireframe.VS */; };
 		FBF5E8AC12376DB4004253BF /* GLFBO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBF5E8AA12376DB4004253BF /* GLFBO.cpp */; };
 		FBF5E8B212376DD1004253BF /* RenderToBuffer.mm in Sources */ = {isa = PBXBuildFile; fileRef = FBF5E8B112376DD1004253BF /* RenderToBuffer.mm */; };
 		FBF5E8B712376DF4004253BF /* Melt.mm in Sources */ = {isa = PBXBuildFile; fileRef = FBF5E8B612376DF4004253BF /* Melt.mm */; };
@@ -56,6 +60,10 @@
 			dstPath = Shaders/.;
 			dstSubfolderSpec = 7;
 			files = (
+				FBE69E26125EFC72003412D1 /* Wireframe.FS in Copy Shaders */,
+				FBE69E27125EFC72003412D1 /* Wireframe.VS in Copy Shaders */,
+				FBE69E22125EFB8E003412D1 /* Default.FS in Copy Shaders */,
+				FBE69E23125EFB8E003412D1 /* Default.VS in Copy Shaders */,
 				F8CD6963119162CE0021D507 /* Feedback.FS in Copy Shaders */,
 				F8CD6964119162CE0021D507 /* Feedback.VS in Copy Shaders */,
 				F8CD6965119162CE0021D507 /* Refractive.FS in Copy Shaders */,
@@ -148,6 +156,10 @@
 		FB544EF81235A68A00E3D0B7 /* MouseHandlerTrackball.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MouseHandlerTrackball.mm; sourceTree = "<group>"; };
 		FB544F121235AA1B00E3D0B7 /* trackball.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trackball.c; sourceTree = "<group>"; };
 		FB544F131235AA1B00E3D0B7 /* trackball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trackball.h; sourceTree = "<group>"; };
+		FBE69E20125EFB8E003412D1 /* Default.FS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Default.FS; path = resources/Shaders/Default.FS; sourceTree = "<group>"; };
+		FBE69E21125EFB8E003412D1 /* Default.VS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Default.VS; path = resources/Shaders/Default.VS; sourceTree = "<group>"; };
+		FBE69E24125EFC72003412D1 /* Wireframe.FS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Wireframe.FS; path = resources/Shaders/Wireframe.FS; sourceTree = "<group>"; };
+		FBE69E25125EFC72003412D1 /* Wireframe.VS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Wireframe.VS; path = resources/Shaders/Wireframe.VS; sourceTree = "<group>"; };
 		FBF5E8AA12376DB4004253BF /* GLFBO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GLFBO.cpp; path = graphics/fbo/GLFBO.cpp; sourceTree = "<group>"; };
 		FBF5E8AB12376DB4004253BF /* GLFBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLFBO.h; path = graphics/fbo/GLFBO.h; sourceTree = "<group>"; };
 		FBF5E8B012376DD1004253BF /* RenderToBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderToBuffer.h; path = graphics/render_to_buffers/RenderToBuffer.h; sourceTree = "<group>"; };
@@ -368,6 +380,10 @@
 				F8CD6960119162CE0021D507 /* Feedback.VS */,
 				F8CD6961119162CE0021D507 /* Refractive.FS */,
 				F8CD6962119162CE0021D507 /* Refractive.VS */,
+				FBE69E20125EFB8E003412D1 /* Default.FS */,
+				FBE69E21125EFB8E003412D1 /* Default.VS */,
+				FBE69E24125EFC72003412D1 /* Wireframe.FS */,
+				FBE69E25125EFC72003412D1 /* Wireframe.VS */,
 			);
 			name = Shader;
 			sourceTree = "<group>";
@@ -485,7 +501,14 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MeltyGlass" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* BaseGL */;
 			projectDirPath = "";
 			projectRoot = "";

@@ -9,13 +9,13 @@
 #import <Cocoa/Cocoa.h>
 #import "ParametricSurface.h"
 
-@class Path;
+@class ParametricCurve;
 
 @interface SurfaceOfRevolution : ParametricSurface {
-	Path* mPath;
+	ParametricCurve* mPath;
 }
 
--(id) initWithPathObj: (Path*) path;
+-(id) initWithParametricCurve: (ParametricCurve*) path;
 
 -(NSPoint3) pointOnSurfaceT:(double) t S:(double) s;
 

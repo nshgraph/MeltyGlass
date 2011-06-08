@@ -39,6 +39,7 @@ static Shader *cubeMapShader = nil;  // Points to the shared object
 
 -(GLint) loadTextureFromImage:(NSImage*) image forTarget:(GLint) target
 {
+	
 	GLint texName = -1;
 	if(!image)
 		return texName;
@@ -91,8 +92,6 @@ static Shader *cubeMapShader = nil;  // Points to the shared object
 	frontTex = -1;
 	imgDir = [[NSString alloc] initWithString:path];
 	[imgDir retain];
-	
-//	cubeObject = [[RenderObjectCube alloc] init];
 	
 	return self;
 }
@@ -208,6 +207,8 @@ static Shader *cubeMapShader = nil;  // Points to the shared object
 	if(cubeMapShader)
 		cubeMapShader->disableShader();
 	
+	[self endCubeMapTexture];
+	
 	glMatrixMode( GL_PROJECTION );
 	glPopMatrix();
 	
@@ -215,12 +216,15 @@ static Shader *cubeMapShader = nil;  // Points to the shared object
 	glPopMatrix();
 	
 	glPopAttrib();
-	
-	[self endCubeMapTexture];
 }
 
 -(void)beginCubeMapTexture
 {
+	if(!initialized)
+		[self create];
+	if(!initialized)
+		return;
+	
 	glEnable(GL_TEXTURE_CUBE_MAP);
 	glEnable(GL_TEXTURE_GEN_S);
 	glEnable(GL_TEXTURE_GEN_T);

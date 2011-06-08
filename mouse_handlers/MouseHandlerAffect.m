@@ -26,35 +26,47 @@
 -(void)updateAffectPointWithLocation:(NSPoint) location
 {
 	NSPoint locationInView = [glView convertPoint:location fromView:nil];
-	NSRect  bounds = [glView bounds];
-	affectPoint.x = 2.0*locationInView.x/(bounds.size.width) - 1.0;
-	affectPoint.y = 2.0*locationInView.y/(bounds.size.height) - 1.0;
-	if(affectPoint.x < -1.0)
-		affectPoint.x = -1.0;
-	if(affectPoint.x > 1.0)
-		affectPoint.x = 1.0;
-	if(affectPoint.y < -1.0)
-		affectPoint.y = -1.0;
-	if(affectPoint.y > 1.0)
-		affectPoint.y = 1.0;
+	affectPoint.x = locationInView.x;
+	affectPoint.y = locationInView.y;
 }
 
-- (void) mouseDown:(NSEvent *)theEvent
+- (void)mouseDown:(NSEvent *)theEvent // trackball
+{
+    if ([theEvent modifierFlags] & NSControlKeyMask) // send to pan
+		[self rightMouseDown:theEvent];
+	else if ([theEvent modifierFlags] & NSAlternateKeyMask) // send to dolly
+		[self otherMouseDown:theEvent];
+}
+
+
+- (void)mouseUp:(NSEvent *)theEvent // trackball
+{
+    if ([theEvent modifierFlags] & NSControlKeyMask) // send to pan
+		[self rightMouseUp:theEvent];
+	else if ([theEvent modifierFlags] & NSAlternateKeyMask) // send to dolly
+		[self otherMouseUp:theEvent];
+	
+	mouseIsDown = false;
+}
+
+- (void) rightMouseDown:(NSEvent *)theEvent
 {
 	mouseIsDown = true;
 	[self updateAffectPointWithLocation:[theEvent locationInWindow]];
 	[glView setNeedsDisplay: YES];
 }
 
-- (void) mouseUp:(NSEvent *)theEvent
+- (void) rightMouseUp:(NSEvent *)theEvent
 {
-	mouseIsDown = false;
 }
 
 - (void) mouseDragged:(NSEvent *)theEvent
 {
-	[self updateAffectPointWithLocation:[theEvent locationInWindow]];
-	[glView setNeedsDisplay: YES]; 
+	if( mouseIsDown )
+	{
+		[self updateAffectPointWithLocation:[theEvent locationInWindow]];
+		[glView setNeedsDisplay: YES]; 
+	}
 }
 
 -(bool) isActive

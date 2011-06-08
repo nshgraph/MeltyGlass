@@ -35,6 +35,8 @@ typedef struct MHCamera {
 	GLfloat worldRotation [4];
 	GLfloat objectRotation [4];
 	float ssmAxis[3];
+	
+	bool panEnabled;
 }
 
 -(id)initWithCamera:(MHCamera*) camera andView:(NSOpenGLView*) view;

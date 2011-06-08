@@ -11,6 +11,8 @@
 
 @class RenderObject;
 @class RenderMode;
+@class Melt;
+@class MouseHandlerAffect;
 
 @interface MeltyGlassOpenGLView : BaseOpenGLView {
 	enum{
@@ -32,6 +34,10 @@
 	
 	RenderMode* mModes[MODE_NUM_MODES];
 	int mModeIndex;
+	
+	Melt* mMeltShader;
+	
+	MouseHandlerAffect* mAffectMouseHandler;
 }
 -(void)dealloc;
 
@@ -46,5 +52,18 @@
 - (void) setObject: (int) obj;
 
 - (void) reloadShader;
+
+
+// mouse related events
+- (void) mouseDown:(NSEvent *)theEvent;
+- (void) rightMouseDown:(NSEvent *)theEvent;
+- (void) otherMouseDown:(NSEvent *)theEvent;
+- (void) mouseUp:(NSEvent *)theEvent;
+- (void) rightMouseUp:(NSEvent *)theEvent;
+- (void) otherMouseUp:(NSEvent *)theEvent;
+- (void) mouseDragged:(NSEvent *)theEvent;
+- (void) scrollWheel:(NSEvent *)theEvent;
+- (void) rightMouseDragged:(NSEvent *)theEvent;
+- (void) otherMouseDragged:(NSEvent *)theEvent;
 
 @end
